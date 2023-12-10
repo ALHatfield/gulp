@@ -13,6 +13,8 @@ gulp.task('clean', async () => {
 });
 ////////////////////////////////////////////////////////////////////////////////
 import handlebars from 'gulp-compile-handlebars';
+import htmlmin from 'gulp-htmlmin';
+
 gulp.task('taskHBS', () => {
   let data = {
     title: '160x600',
@@ -36,6 +38,7 @@ gulp.task('taskHBS', () => {
     // .pipe(handlebars(templateData, options))
     .pipe(handlebars(data, options))
     .pipe(rename('index.html'))
+    .pipe(htmlmin({ collapseWhitespace: true, minifyCSS: true, minifyJS: true }))
     .pipe(gulp.dest(dest));
 });
 
@@ -49,6 +52,7 @@ import * as dartSass from 'sass' // doesn't work even though it's suggested
 // import dartSass from 'sass'
 import gulpSass from 'gulp-sass'
 const sass = gulpSass(dartSass) // need dart sass compiler to work
+// const Sass = gulpSass(sass) // need dart sass compiler to work
 
 import cleanCSS from 'gulp-clean-css';
 import autoprefixer from 'gulp-autoprefixer';
