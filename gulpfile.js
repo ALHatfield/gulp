@@ -3,14 +3,14 @@ import concat from 'gulp-concat';
 import rename from 'gulp-rename';
 import fs from 'fs'
 const src = './src/'
-const build = './build/'
+const dest = './build/'
 
 
 ////////////////////////////////////////////////////////////////////////////////
 import { deleteSync } from 'del';
 gulp.task('clean', async () => {
   // You can use multiple globbing patterns as you would with `gulp.src`
-  await deleteSync([`${build}/*`]);
+  await deleteSync([`${dest}/*`]);
 });
 ////////////////////////////////////////////////////////////////////////////////
 import handlebars from 'gulp-compile-handlebars';
@@ -39,7 +39,7 @@ gulp.task('taskHBS', () => {
     // .pipe(handlebars(templateData, options))
     .pipe(handlebars(data, options))
     .pipe(rename('index.html'))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest(dest));
 });
 
 
@@ -48,12 +48,10 @@ gulp.task('taskHBS', () => {
 
 
 ////////////////////////////////////////////////////////////////////////////////
-// const sass = require('gulp-sass')(require('sass'));
 // import * as sass from 'sass' // doesn't work even though it's suggested
 import dartSass from 'sass'
 import gulpSass from 'gulp-sass'
 const sass = gulpSass(dartSass) // need dart sass compiler to work
-
 import cleanCSS from 'gulp-clean-css';
 import autoprefixer from 'gulp-autoprefixer';
 
@@ -66,18 +64,22 @@ gulp.task('taskCSS', () => {
   .pipe(sass({outputStyled: 'nested'}))
   .pipe(autoprefixer('last 2 versions'))
   .pipe(cleanCSS())
-  // .pipe(rename('combined.css'))
-  .pipe(gulp.dest(build))
+  .pipe(gulp.dest(dest))
 })
+
+
+
 ////////////////////////////////////////////////////////////////////////////////
 import uglify from 'gulp-uglify';
-import { type } from 'os';
 
 gulp.task('taskJS', () => {
-  return gulp.src('./src/scripts/global.js')
-    .pipe(concat('combined.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest(build))
+  return gulp.src([
+    './src/global/scripts/global.js',
+    './src/scripts/index.js'
+  ])
+  .pipe(concat('combined.js'))
+  .pipe(uglify())
+  .pipe(gulp.dest(dest))
 })
 
 
@@ -87,17 +89,10 @@ gulp.task('watch', () => {
     'clean',
     gulp.parallel(['taskHBS', 'taskCSS', 'taskJS'])
   ]))
-  // gulp.watch(src, gulp.series(['taskCSS']))
-  // gulp.watch('./src/templates', gulp.series('taskHBS'))
-  // gulp.watch('./src/styles/*.scss', gulp.series('taskCSS'))
-  // gulp.watch('./src/scripts/*.js', gulp.series('taskJS'))
 })
 
 ////////////////////////////////////////////////////////////////////////////////
-// ??? not working
-gulp.task('build', async () => {
-  await gulp.parallel(['taskHBS', 'taskCSS', 'taskJS'])
-})
+gulp.task('build', gulp.parallel(['taskHBS', 'taskCSS', 'taskJS']))
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -106,7 +101,6 @@ gulp.task('build', async () => {
 // gulp.task('default', gulp.series('clean', 'build', 'watch'));
 gulp.task('default', gulp.series(
   'clean',
-  gulp.parallel(['taskHBS', 'taskCSS', 'taskJS']),  // 'build',
-  // 'build',
+  'build',
   'watch',
 ));
