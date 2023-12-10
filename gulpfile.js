@@ -38,7 +38,13 @@ gulp.task('taskHBS', () => {
     // .pipe(handlebars(templateData, options))
     .pipe(handlebars(data, options))
     .pipe(rename('index.html'))
-    .pipe(htmlmin({ collapseWhitespace: true, minifyCSS: true, minifyJS: true }))
+    .pipe(htmlmin({ 
+      collapseWhitespace: true, 
+      removeComments: true, 
+      removeEmptyAttributes: true,
+      minifyCSS: true, 
+      minifyJS: true 
+    }))
     .pipe(gulp.dest(dest));
 });
 
