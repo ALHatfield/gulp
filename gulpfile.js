@@ -9,13 +9,10 @@ const dest = './build/'
 ////////////////////////////////////////////////////////////////////////////////
 import { deleteSync } from 'del';
 gulp.task('clean', async () => {
-  // You can use multiple globbing patterns as you would with `gulp.src`
-  await deleteSync([`${dest}/*`]);
+  deleteSync([`${dest}/*`]);
 });
 ////////////////////////////////////////////////////////////////////////////////
 import handlebars from 'gulp-compile-handlebars';
-// console.log(handlebars)
-// console.log(handlebars.Handlebars.helpers)
 gulp.task('taskHBS', () => {
   let data = {
     title: '160x600',
@@ -54,7 +51,6 @@ import gulpSass from 'gulp-sass'
 const sass = gulpSass(dartSass) // need dart sass compiler to work
 import cleanCSS from 'gulp-clean-css';
 import autoprefixer from 'gulp-autoprefixer';
-
 gulp.task('taskCSS', () => {
   return gulp.src([
     './src/global/styles/*.scss',
@@ -71,7 +67,6 @@ gulp.task('taskCSS', () => {
 
 ////////////////////////////////////////////////////////////////////////////////
 import uglify from 'gulp-uglify';
-
 gulp.task('taskJS', () => {
   return gulp.src([
     './src/global/scripts/global.js',
