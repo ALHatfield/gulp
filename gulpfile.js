@@ -14,6 +14,7 @@ gulp.task('clean', async () => {
 });
 ////////////////////////////////////////////////////////////////////////////////
 import handlebars from 'gulp-compile-handlebars';
+// console.log(handlebars)
 // console.log(handlebars.Handlebars.helpers)
 gulp.task('taskHBS', () => {
   let data = {
@@ -27,13 +28,10 @@ gulp.task('taskHBS', () => {
     batch : ['./src/templates/partials'],
     helpers : {
       contains: function(x, y, z) {
-        if (x === y) return z.fn();
+        if (x === y) return z.fn(this);
       },
       is: function(x, y, z) {
-        // console.log(x)
-        // console.log(y)
-        // console.log(z.fn())
-        if (x === y) return z.fn();
+        if (x === y) return z.fn(this);
       }
     }
   }
