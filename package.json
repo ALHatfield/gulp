@@ -30,5 +30,8 @@
   "overrides": {
     "graceful-fs": "^4.2.11"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "yaml": "^2.3.4"
+  }
 }
