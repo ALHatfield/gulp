@@ -45,10 +45,11 @@ gulp.task('taskHBS', () => {
 
 
 ////////////////////////////////////////////////////////////////////////////////
-// import * as sass from 'sass' // doesn't work even though it's suggested
-import dartSass from 'sass'
+import * as dartSass from 'sass' // doesn't work even though it's suggested
+// import dartSass from 'sass'
 import gulpSass from 'gulp-sass'
 const sass = gulpSass(dartSass) // need dart sass compiler to work
+
 import cleanCSS from 'gulp-clean-css';
 import autoprefixer from 'gulp-autoprefixer';
 gulp.task('taskCSS', () => {
