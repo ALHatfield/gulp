@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>banner</title>
+        <meta name="ad.size" content="width=160,height=600">
+    <title>160x600</title>
     <style>
         * {
             -webkit-box-sizing: border-box;
@@ -32,6 +33,14 @@
             overflow: hidden;
             position: absolute;
         }
+            body {
+                height:600px;
+                width:160px;
+            }
+            #container	{
+                height:600px;
+                width:160px;
+            }
     
     
     
@@ -45,6 +54,69 @@
 <div id="container">
     <div id="background-holder" class="clickTag1">
 
+
+
+
+
+            <!--IMAGES-->
+            <div id="frame1-bg" class="pos-abs hide frame1-in"></div>
+            <div id="frame1-logo" class="pos-abs hide frame1-in"></div>
+            <div id="frame1-img" class="pos-abs hide frame1-in frame3-out"></div>
+            <div id="frame1-orangeball" class="pos-abs hide frame2-out"></div>
+<!--            <div id="frame2-img" class="pos-abs hide frame2"></div>-->
+            <div id="frame2-orangeball" class="pos-abs hide"></div>
+<!--            <div id="frame3-img1" class="pos-abs hide"></div>-->
+            <div id="frame3-img2" class="pos-abs hide"></div>
+
+            <!--COPY-->
+            <div id="frame1-copy" class="pos-abs hide text-white fw-600 frame1">Consider moving <span class=highlight>YESCARTA</span> up</div>
+            <div id="frame2-copy" class="pos-abs hide text-white fw-600 frame2">
+                Consider moving <span class=highlight>YESCARTA</span> up
+                
+                
+                in your treatment
+                
+                algorithm.
+            </div>
+            <div id="frame3-copy" class="pos-abs hide text-white fw-600 frame3">
+                For adult patients with
+                
+                
+                <span class=highlight>large B-cell lymphoma</span> that is
+                
+                
+                primary refractory to or relapses
+                
+                
+                &le;12 months of 1L treatment,<sup>1</sup>
+            </div>
+            <div id="frame3-footnote1" class="pos-abs hide text-white fw-400 frame3">
+                <u>Limitations of Use</u>: YESCARTA is not indicated for the treatment of patients with primary central nervous
+                
+                system lymphoma.<sup>1</sup>
+            </div>
+            <div id="frame3-footnote2" class="pos-abs hide text-white fw-400 frame3">1L=first line.</div>
+            <div id="frame4-copy" class="pos-abs hide text-white fw-600 frame4">
+                choose <span class=highlight>YESCARTA</span>
+                
+                when treating your
+                
+                
+
+                adult 2L R/R LBCL
+                
+                patients in a
+                
+                
+                curative
+                
+                intent
+                
+                setting.<sup>1-3</sup>*
+            </div>
+            <div id="frame4-btn" class="pos-abs hide text-white text-bold frame4">LEARN MORE</div>
+            <div id="frame4-footnote1" class="pos-abs hide text-white fw-400 frame4 before-asterisk">Curative intent setting refers to treatment setting at time of first treatment failure.<sup>3</sup></div>
+            <div id="frame4-footnote2" class="pos-abs hide text-white fw-400 frame4">2L=second line; LBCL=large B-cell lymphoma; R/R=relapsed/refractory.</div>
 
 
     </div>
@@ -112,12 +184,15 @@
     
             <p>
                 <b>References:</b>
+                    <b>1.</b>&nbsp;YESCARTA<sup>&reg;</sup> (axicabtagene ciloleucel). Prescribing information. Kite Pharma, Inc; 2022.
+                    <b>2.</b>&nbsp;Bachanova V, Perales MA, Abramson JS. Modern management of relapsed and refractory aggressive B-cell lymphoma: a perspective on the current treatment landscape and patient selection for CAR T-cell therapy. <em>Blood Rev</em>. 2020;40:100640. doi:10.1016/j.blre.2019.100640
+                    <b>3.</b>&nbsp;Perales MA, Kuruvilla J, Snider JT, et al. The cost-effectiveness of axicabtagene ciloleucel as second-line therapy in patients with large B-cell lymphoma in the United States: an economic evaluation of the ZUMA-7 trial. <em>Transplant Cell Ther</em>. 2022;28(11):750.e1-750.e6.
     
             </p>
     
             <p>
                 YESCARTA, the Yescarta Logo, TECARTUS, KITE, and the Kite Logo are trademarks of Kite Pharma, Inc. GILEAD is a trademark of Gilead Sciences, Inc. &copy; 2023 Kite Pharma, Inc. All rights reserved. |
-                
+                US-YES-00122 11/2023
                 
                 
                 
@@ -165,14 +240,14 @@
             var extCSS=document.createElement('link');
             extCSS.setAttribute("rel", "stylesheet");
             extCSS.setAttribute("type", "text/css");
-            extCSS.setAttribute("href", Enabler.getUrl("global.css"));
+            extCSS.setAttribute("href", Enabler.getUrl("combined.css"));
             document.getElementsByTagName("head")[0].appendChild(extCSS);
 
-            extCSS=document.createElement('link');
-            extCSS.setAttribute("rel", "stylesheet");
-            extCSS.setAttribute("type", "text/css");
-            extCSS.setAttribute("href", Enabler.getUrl("override.css"));
-            document.getElementsByTagName("head")[0].appendChild(extCSS);
+            //extCSS=document.createElement('link');
+            // extCSS.setAttribute("rel", "stylesheet");
+            // extCSS.setAttribute("type", "text/css");
+            // extCSS.setAttribute("href", Enabler.getUrl("override.css"));
+            // document.getElementsByTagName("head")[0].appendChild(extCSS);
 
             extCSS=document.createElement('link');
             extCSS.setAttribute("rel", "stylesheet");
@@ -182,24 +257,24 @@
 
             var extJavascript = document.createElement('script');
             extJavascript.setAttribute('type', 'text/javascript');
-            extJavascript.setAttribute('src', Enabler.getUrl('global.js'));
+            extJavascript.setAttribute('src', Enabler.getUrl('combined.js'));
             document.getElementsByTagName('head')[0].appendChild(extJavascript);
 
+
+            // extJavascript = document.createElement('script');
+            // extJavascript.setAttribute('type', 'text/javascript');
+            // extJavascript.setAttribute('src', Enabler.getUrl('override.js'));
+            // document.getElementsByTagName('head')[0].appendChild(extJavascript);
 
             extJavascript = document.createElement('script');
             extJavascript.setAttribute('type', 'text/javascript');
-            extJavascript.setAttribute('src', Enabler.getUrl('override.js'));
+            extJavascript.setAttribute('src', Enabler.getUrl('ISIScroller.js'));
             document.getElementsByTagName('head')[0].appendChild(extJavascript);
 
             extJavascript = document.createElement('script');
-          extJavascript.setAttribute('type', 'text/javascript');
-          extJavascript.setAttribute('src', Enabler.getUrl('ISIScroller.js'));
-          document.getElementsByTagName('head')[0].appendChild(extJavascript);
-
-          extJavascript = document.createElement('script');
-          extJavascript.setAttribute('type', 'text/javascript');
-          extJavascript.setAttribute('src', Enabler.getUrl('ISI_Expander.js'));
-          document.getElementsByTagName('head')[0].appendChild(extJavascript);
+            extJavascript.setAttribute('type', 'text/javascript');
+            extJavascript.setAttribute('src', Enabler.getUrl('ISI_Expander.js'));
+            document.getElementsByTagName('head')[0].appendChild(extJavascript);
         }
     </script>
 </body>

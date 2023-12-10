@@ -14,54 +14,36 @@ gulp.task('clean', async () => {
 });
 ////////////////////////////////////////////////////////////////////////////////
 import handlebars from 'gulp-compile-handlebars';
-
+// console.log(handlebars.Handlebars.helpers)
 gulp.task('taskHBS', () => {
-  let templateData = {
-    title: 'banner'
+  let data = {
+    title: '160x600',
+    size: '160x600',
+    option: 1,
+    production: false
   }
   let options = {
     // partials: './src/templates/partials/*.hbs',
     batch : ['./src/templates/partials'],
     helpers : {
-      capitals : function(str){
-        return str.toUpperCase();
+      contains: function(x, y, z) {
+        if (x === y) return z.fn();
       },
-      contains: function() {},
-      is: function(x) {
-        return console.log(x)
+      is: function(x, y, z) {
+        // console.log(x)
+        // console.log(y)
+        // console.log(z.fn())
+        if (x === y) return z.fn();
       }
     }
   }
-
-
   return gulp.src('src/templates/layouts/default.hbs')
     // .pipe(handlebars(templateData, options))
-    .pipe(handlebars(templateData, options))
+    .pipe(handlebars(data, options))
     .pipe(rename('index.html'))
     .pipe(gulp.dest('build'));
 });
 
-
-//
-// import handlebars from 'handlebars';
-// import layouts from 'handlebars-layouts';
-// handlebars.registerHelper(layouts(handlebars));
-//
-// gulp.task('taskHBS', async () => {
-//   // handlebars.compile('./src/templates/default.hbs');
-//
-//   var source = "<p>Hello, my name is {{name}}. I am from {{hometown}}. I have " +
-//     "{{kids.length}} kids:</p>" +
-//     "<ul>{{#kids}}<li>{{name}} is {{age}}</li>{{/kids}}</ul>";
-//
-//   var template = handlebars.compile(source);
-//
-//   var data = { "name": "Alan", "hometown": "Somewhere, TX",
-//     "kids": [{"name": "Jimmy", "age": "12"}, {"name": "Sally", "age": "4"}]};
-//   var result = template(data);
-//
-//     console.log(result);
-// });
 
 
 
@@ -91,6 +73,7 @@ gulp.task('taskCSS', () => {
 })
 ////////////////////////////////////////////////////////////////////////////////
 import uglify from 'gulp-uglify';
+import { type } from 'os';
 
 gulp.task('taskJS', () => {
   return gulp.src('./src/scripts/global.js')
