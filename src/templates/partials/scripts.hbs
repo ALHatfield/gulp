@@ -1,0 +1,95 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<!--<script src="https://s0.2mdn.net/ads/studio/Enabler.js"> </script>-->
+<script src="Enabler.js"> </script>
+{{#if production}}
+    <script>
+        window.onload = function() {
+            if (Enabler.isInitialized()) {
+                enablerInitHandler();
+            } else {
+                Enabler.addEventListener(studio.events.StudioEvent.INIT, enablerInitHandler);
+            }
+        };
+
+        function enablerInitHandler() {
+            // Start ad, initialize animation,
+            // load in your image assets, call Enabler methods,
+            // and/or include other Studio modules.
+            // Also, you can start the Polite Load
+
+            var extCSS=document.createElement('link');
+            extCSS.setAttribute("rel", "stylesheet");
+            extCSS.setAttribute("type", "text/css");
+            extCSS.setAttribute("href", Enabler.getUrl("combined.min.css"));
+            document.getElementsByTagName("head")[0].appendChild(extCSS);
+
+            extCSS=document.createElement('link');
+            extCSS.setAttribute("rel", "stylesheet");
+            extCSS.setAttribute("type", "text/css");
+            extCSS.setAttribute("href", "https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800&display=swap");
+            document.getElementsByTagName("head")[0].appendChild(extCSS);
+
+            var extJavascript = document.createElement('script');
+            extJavascript.setAttribute('type', 'text/javascript');
+            extJavascript.setAttribute('src', Enabler.getUrl('combined.min.js'));
+            document.getElementsByTagName('head')[0].appendChild(extJavascript);
+        }
+    </script>
+{{else}}
+    <script>
+        window.onload = function() {
+            if (Enabler.isInitialized()) {
+                enablerInitHandler();
+            } else {
+                Enabler.addEventListener(studio.events.StudioEvent.INIT, enablerInitHandler);
+            }
+        };
+
+        function enablerInitHandler() {
+            // Start ad, initialize animation,
+            // load in your image assets, call Enabler methods,
+            // and/or include other Studio modules.
+            // Also, you can start the Polite Load
+
+            var extCSS=document.createElement('link');
+            extCSS.setAttribute("rel", "stylesheet");
+            extCSS.setAttribute("type", "text/css");
+            extCSS.setAttribute("href", Enabler.getUrl("global.css"));
+            document.getElementsByTagName("head")[0].appendChild(extCSS);
+
+            extCSS=document.createElement('link');
+            extCSS.setAttribute("rel", "stylesheet");
+            extCSS.setAttribute("type", "text/css");
+            extCSS.setAttribute("href", Enabler.getUrl("override.css"));
+            document.getElementsByTagName("head")[0].appendChild(extCSS);
+
+            extCSS=document.createElement('link');
+            extCSS.setAttribute("rel", "stylesheet");
+            extCSS.setAttribute("type", "text/css");
+            extCSS.setAttribute("href", "https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800&display=swap");
+            document.getElementsByTagName("head")[0].appendChild(extCSS);
+
+            var extJavascript = document.createElement('script');
+            extJavascript.setAttribute('type', 'text/javascript');
+            extJavascript.setAttribute('src', Enabler.getUrl('global.js'));
+            document.getElementsByTagName('head')[0].appendChild(extJavascript);
+
+
+            extJavascript = document.createElement('script');
+            extJavascript.setAttribute('type', 'text/javascript');
+            extJavascript.setAttribute('src', Enabler.getUrl('override.js'));
+            document.getElementsByTagName('head')[0].appendChild(extJavascript);
+
+            extJavascript = document.createElement('script');
+          extJavascript.setAttribute('type', 'text/javascript');
+          extJavascript.setAttribute('src', Enabler.getUrl('ISIScroller.js'));
+          document.getElementsByTagName('head')[0].appendChild(extJavascript);
+
+          extJavascript = document.createElement('script');
+          extJavascript.setAttribute('type', 'text/javascript');
+          extJavascript.setAttribute('src', Enabler.getUrl('ISI_Expander.js'));
+          document.getElementsByTagName('head')[0].appendChild(extJavascript);
+        }
+    </script>
+{{/if}}
