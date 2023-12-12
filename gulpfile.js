@@ -9,20 +9,28 @@ const dest = './build'
 
 ////////////////////////////////////////////////////////////////////////////////
 import YAML from 'yaml'
-
-gulp.task('taskYAML', async () => {
-  let fileStr = fs.readFileSync(`${src}/templates/views/160x600/index.hbs`, {encoding:'utf8'})
-  // console.log(fileStr)
-
-  // get contents inside `---`
-  let docStruct = fileStr.match(/^---\n([\s\S]+)---([\s\S]+)$/);
-  console.log(docStruct)
-
-  // parse contents
-  console.log(YAML.parse(fileStr))
-
+// gulp.task('taskDATA', async () => {
+//   let data = JSON.parse(fs.readFileSync(`${src}/data/templateData.json`, {encoding:'utf8'}))
+//   // console.log(typeof data)
+//   data.forEach(banner => {
+//     console.log(banner);
+//   })
+//   // get contents inside `---`
+//   // let docStruct = fileStr.match(/^---\n([\s\S]+)---([\s\S]+)$/);
+//   // console.log(docStruct)
+//
+//   // parse contents
+//   // console.log(YAML.parse(fileStr))
+//
+// })
+////////////////////////////////////////////////////////////////////////////////
+import app from 'assemble';
+// console.log(app)
+// app.copy('src/templates/views/*', 'build')
+gulp.task('assemble', () => {
+  app.initAssemble({});
+  // app.copy('src/template/views/160x600/index.hbs', 'build/');
 })
-
 
 ////////////////////////////////////////////////////////////////////////////////
 import handlebars from 'gulp-compile-handlebars';
@@ -47,18 +55,20 @@ gulp.task('taskHBS', () => {
       }
     }
   }
-  return gulp.src('src/templates/layouts/default.hbs')
-    // .pipe(handlebars(templateData, options))
-    .pipe(handlebars(data, options))
-    .pipe(rename('index.html'))
-    .pipe(htmlmin({ 
-      collapseWhitespace: true, 
-      removeComments: true, 
-      removeEmptyAttributes: true,
-      minifyCSS: true, 
-      minifyJS: true 
-    }))
-    .pipe(gulp.dest(dest));
+  return (
+    gulp.src('src/templates/layouts/default.hbs')
+      // .pipe(handlebars(templateData, options))
+      .pipe(handlebars(data, options))
+      .pipe(rename('index.html'))
+      .pipe(htmlmin({
+        collapseWhitespace: true,
+        removeComments: true,
+        removeEmptyAttributes: true,
+        minifyCSS: true,
+        minifyJS: true
+      }))
+      .pipe(gulp.dest(dest))
+  )
 });
 
 
