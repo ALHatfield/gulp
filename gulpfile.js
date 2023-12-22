@@ -1,32 +1,33 @@
-import gulp from 'gulp';
-import concat from 'gulp-concat';
-import rename from 'gulp-rename';
+import autoprefixer from 'gulp-autoprefixer';
 import bannerConfig from './banner.config.json' assert { type: 'json' };
-
-
-// HBS //////////////////////////////////////////////////////////////////////////////
+import concat from 'gulp-concat';
+import { deleteSync } from 'del';
+import gulp from 'gulp';
+import * as dartSass from 'sass'
+import gulpSass from 'gulp-sass'
 import handlebars from 'gulp-compile-handlebars';
 import htmlmin from 'gulp-htmlmin';
-function compileHBS({ size, width, height }, done) {
-  let data = {
-    title: size,
-    size: size,
-    width: width,
-    height: height,
-    option: 1,
-    production: false
-  }
-  let options = {
-    batch : [`src/templates/partials`],
-    helpers : {
-      contains: function(x, y, z) {
-        if (x === y) return z.fn(this);
-      },
-      is: function(x, y, z) {
-        if (x === y) return z.fn(this);
-      }
+import rename from 'gulp-rename';
+import uglify from 'gulp-uglify';
+const sass = gulpSass(dartSass) // need dart sass compiler to work
+
+// handlebar options
+const options = {
+  batch : [`src/templates/partials`],
+  helpers : {
+    contains: function(x, y, z) {
+      if (x === y) return z.fn(this);
+    },
+    is: function(x, y, z) {
+      if (x === y) return z.fn(this);
     }
   }
+}
+
+// compile handlebars
+function compileHBS({ size, width, height, set }, done) {
+  const data = { size, width, height, set, production: false }
+
   gulp.src('src/templates/layouts/default.hbs')
     .pipe(handlebars(data, options))
     .pipe(rename('index.html'))
@@ -48,12 +49,7 @@ function compileHBS({ size, width, height }, done) {
   done();
 }
 
-
-// SASS //////////////////////////////////////////////////////////////////////////////
-import autoprefixer from 'gulp-autoprefixer';
-import * as dartSass from 'sass'
-import gulpSass from 'gulp-sass'
-const sass = gulpSass(dartSass) // need dart sass compiler to work
+// compile sass
 function compileSCSS({ size }, done) {
   gulp.src([
     `src/styles/global.scss`,
@@ -67,22 +63,20 @@ function compileSCSS({ size }, done) {
   done();
 }
 
-
-// JS //////////////////////////////////////////////////////////////////////////////
-import uglify from 'gulp-uglify';
+// compile javascript
 function compileJS({ size }, done) {
   gulp.src([
     `src/scripts/global.js`,
     `src/scripts/${size}.js`
   ])
     .pipe(concat('combined.js'))
-    // .pipe(uglify())      // production
+    // .pipe(uglify())                        // production
     .pipe(gulp.dest(`build/${size}`));
   done();
 }
 
 
-// compile all //////////////////////////////////////////////////////////////////////////////
+// compile banner.config.json
 gulp.task('compile', (done) => {
   for (const banner of bannerConfig) {
     compileHBS(banner, done);
@@ -92,16 +86,6 @@ gulp.task('compile', (done) => {
 })
 
 
-////////////////////////////////////////////////////////////////////////////////
-gulp.task('watch', () => {gulp.watch(`src/`, gulp.series(['clean', 'compile']))})
-
-
-import { deleteSync } from 'del';
 gulp.task('clean', async () => deleteSync([`build/*`]) );
-
-
-gulp.task('default', gulp.series(
-  'clean',
-  'compile',
-  'watch',
-));
+gulp.task('watch', () => {gulp.watch(`src/`, gulp.series(['clean', 'compile']))})
+gulp.task('default', gulp.series( 'clean', 'compile', 'watch' ));

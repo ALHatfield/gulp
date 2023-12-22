@@ -2,11 +2,13 @@
   {
     "size": "160x600",
     "width": 160,
-    "height": 600
+    "height": 600,
+    "set": 1
   },
   {
     "size": "300x250",
     "width": 300,
-    "height": 250
+    "height": 250,
+    "set": 1
   }
 ]
