@@ -1,5 +1,5 @@
 import autoprefixer from 'gulp-autoprefixer';
-import bannerConfig from './banner.config.json' assert { type: 'json' };
+import bannerConfig from './banner.config2.json' assert { type: 'json' };
 import concat from 'gulp-concat';
 import { deleteSync } from 'del';
 import gulp from 'gulp';
@@ -64,11 +64,10 @@ function compileSCSS({ size }, buildPath, done) {
 }
 
 // compile javascript
-function compileJS({ set, size }, buildPath, done) {
-  set ? set : set = ".";
+function compileJS({ size }, buildPath, done) {
   gulp.src([
-    `${set}/src/scripts/global.js`,
-    `${set}/src/scripts/${size}.js`
+    `src/scripts/global.js`,
+    `src/scripts/${size}.js`
   ])
     .pipe(concat('combined.js'))
     // .pipe(uglify())                        // production
@@ -79,8 +78,8 @@ function compileJS({ set, size }, buildPath, done) {
 
 
 // loop and compile banner.config.json
-// banner.config.json //////////////////////////////////////////////////////////
-function configureBuildPath({ set, size }) {
+// banner.config2.json //////////////////////////////////////////////////////////
+function configureBuildPath(set, { size }) {
   if (set) {
     return `build/${set}/${size}`
   } else {
@@ -88,13 +87,17 @@ function configureBuildPath({ set, size }) {
   }
 }
 gulp.task('compile', async (done) => {
-  for (const banner of bannerConfig) {
-    let buildPath = await configureBuildPath(banner)
-    compileHBS(banner, buildPath, done);
-    compileSCSS(banner, buildPath, done);
-    compileJS(banner, buildPath, done);
+  for (const bannerSet in bannerConfig) {
+    for (const banner of bannerConfig[bannerSet]) {
+      let buildPath = await configureBuildPath(bannerSet, banner)
+      compileHBS(banner, buildPath, done);
+      compileSCSS(banner, buildPath, done);
+      compileJS(banner, buildPath, done);
+    }
   }
 })
+
+
 ////////////////////////////////////////////////////////////
 
 gulp.task('clean', async () => deleteSync([`build/*`]) );

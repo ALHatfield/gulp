@@ -64,11 +64,10 @@ function compileSCSS({ size }, buildPath, done) {
 }
 
 // compile javascript
-function compileJS({ set, size }, buildPath, done) {
-  set ? set : set = ".";
+function compileJS({ size }, buildPath, done) {
   gulp.src([
-    `${set}/src/scripts/global.js`,
-    `${set}/src/scripts/${size}.js`
+    `src/scripts/global.js`,
+    `src/scripts/${size}.js`
   ])
     .pipe(concat('combined.js'))
     // .pipe(uglify())                        // production

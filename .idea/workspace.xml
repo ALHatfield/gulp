@@ -5,13 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43073f69-db83-47b5-937f-8a6ee0aab534" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/gulpOption1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulpOption2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/41e30fba9abaa1ac1dfe02388867cd3b5883c5d3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cdde5660551cbb70f4b0653fb1f24a2db94c11ae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec766ddca9466ca043271cf7fe1070e33acc8615" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec766ddca9466ca043271cf7fe1070e33acc8615" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee9d2cf188170ffae6c24450b921d4dd26b8dfaf" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee9d2cf188170ffae6c24450b921d4dd26b8dfaf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/1/41e30fba9abaa1ac1dfe02388867cd3b5883c5d3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/d/cdde5660551cbb70f4b0653fb1f24a2db94c11ae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banner.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/banner.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/160x600/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/160x600/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/300x250/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/300x250/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/160x600/combined.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/160x600/combined.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/160x600/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/300x250/combined.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/300x250/combined.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/300x250/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/layouts/default.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/layouts/default.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +89,9 @@
       <workItem from="1702841381419" duration="76000" />
       <workItem from="1702841958267" duration="769000" />
       <workItem from="1703117121781" duration="15496000" />
-      <workItem from="1703216294554" duration="4053000" />
+      <workItem from="1703216294554" duration="4727000" />
+      <workItem from="1703221069554" duration="63000" />
+      <workItem from="1703267560728" duration="4249000" />
     </task>
     <servers />
   </component>

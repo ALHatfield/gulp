@@ -7,10 +7,6 @@ Q
 	readme.md,2/7/275d783e298228506068436512433d343feb52aa
 <
 package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
-D
-src/scripts/index.js,c/d/cdde5660551cbb70f4b0653fb1f24a2db94c11ae
-E
-src/styles/index.scss,4/1/41e30fba9abaa1ac1dfe02388867cd3b5883c5d3
 B
 banner.config.json,c/2/c295b42c2593888a73bac3ee15e6841e51a5d769
 F
@@ -33,3 +29,19 @@ A
 package-lock.json,f/a/fa288d1472d29beccb489a676f68739ad365fc47
 J
 build/160x600/combined.css,2/8/28aeea79dfec39eecd4268388771f84aa815d58a
+C
+banner.config2.json,d/4/d4697c1c33aa176513c1ae7ba8e0e1ff99c0e536
+O
+build/set1/160x600/combined.css,d/5/d55a988717e1c36448e44c7ab80fe9c3e68891ed
+O
+build/set1/300x250/combined.css,1/1/1144960d36ba75cc0d21c10dfbe25be677ffd1e0
+O
+build/set2/160x600/combined.css,a/d/adc17a08ed262b7e465a79427b08264da13bcac8
+N
+build/set2/160x600/combined.js,d/0/d03d870052205ff0962fb22ef85c6cc753cfacc7
+O
+build/set2/300x250/combined.css,6/7/6709637a6666f6ce9d2feaa43d5c8e46e49fd082
+>
+gulpOption1.js,0/8/08f60371c43a19b64d847d9ce1ba95ff0ebc3322
+>
+gulpOption2.js,7/0/70ee7c9bd0ef1e1da3c22134a2527b58c4dce139
