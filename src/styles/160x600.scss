@@ -1,0 +1,116 @@
+$banner_height: 600px;
+$banner_width: 160px;
+$isi_height: 0;
+$pi_height: 0;
+/////////////////////////////////////////////////////
+#container {
+  height: $banner_height;
+  width: $banner_width;
+}
+#background-holder {
+  height: $banner_height - $isi_height - $pi_height;
+  width: $banner_width;
+}
+/////////////////////////////////////////////////////
+#frame1-copy {
+  font-size: 20px;
+  line-height: 22px;
+  width: 100%;
+  padding: 0 10px;
+  top: 128px;
+  left: 0;
+}
+#frame1-cta {
+  font-size: 14px;
+  line-height: 12px;
+  width: 133px;
+  padding: 7px 0 7px 10px;
+  top: 260px;
+  left: 14px;
+}
+#frame2-copy1 {
+  font-size: 17px;
+  line-height: 22px;
+  width: 100%;
+  padding: 0 10px;
+  top: 120px;
+  left: 0;
+}
+#frame3-copy1 {
+  font-size: 17px;
+  line-height: 22px;
+  width: 100%;
+  padding: 0 0px;
+  top: 98px;
+  left: 0;
+}
+
+#frame3-footnote1 {
+  font-size: 7px;
+  line-height: 9px;
+  width: 100%;
+  padding: 0 0;
+  top: 573px;
+  left: unset;
+  right: 10px;
+  text-align: end;
+}
+#frame1-background {
+  width: 161px;
+  height: 760px;
+  background-image: url(Background.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -161px;
+  left: 0;
+}
+#frame1-viewfinder {
+  width: 150px;
+  height: 364px;
+  background-image: url(viewfinder.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 370px;
+  left: 5px;
+}
+#frame1-madrigal {
+  width: 98px;
+  height: 46px;
+  background-image: url(madrigal_color.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 30px;
+  left: 31px;
+}
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////
+#ISI {
+  border-top: 1px solid #9a9b9e;
+  bottom: $pi_height;
+  height: $isi_height;
+  width: $banner_width;
+}
+
+#ISIWrapper {
+
+}
+
+#ISICopy {
+  padding-bottom: 20px;
+}
+
+#PI {
+  bottom: 0px;
+  left: 0;
+  width: $banner_width;
+  height: $pi_height;
+  font-size: 9px;
+  text-align: center;
+  padding: 2px 0;
+}

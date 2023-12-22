@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "assemble": "^0.24.3",
     "del": "^7.1.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.1.0",

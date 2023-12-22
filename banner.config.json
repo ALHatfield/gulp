@@ -2,17 +2,11 @@
   {
     "size": "160x600",
     "width": 160,
-    "height": 600,
-    "images": "src/images/160x600/*.*",
-    "js": "src/scripts/160x600.js",
-    "scss": "src/scss/160x600.scss"
+    "height": 600
   },
   {
     "size": "300x250",
     "width": 300,
-    "height": 250,
-    "images": "src/images/300x250/*.*",
-    "js": "src/scripts/300x250.js",
-    "scss": "src/scss/300x250.scss"
+    "height": 250
   }
 ]

@@ -1,22 +1,18 @@
 import gulp from 'gulp';
 import concat from 'gulp-concat';
 import rename from 'gulp-rename';
-import fs from 'fs'
-
-const src = './src'
-const dest = './build'
+import bannerConfig from './banner.config.json' assert { type: 'json' };
 
 
 // HBS //////////////////////////////////////////////////////////////////////////////
 import handlebars from 'gulp-compile-handlebars';
 import htmlmin from 'gulp-htmlmin';
-
-function compileHBS(done) {
+function compileHBS({ size, width, height }, done) {
   let data = {
-    title: banner.size,
-    size: banner.size,
-    width: banner.width,
-    height: banner.height,
+    title: size,
+    size: size,
+    width: width,
+    height: height,
     option: 1,
     production: false
   }
@@ -37,81 +33,67 @@ function compileHBS(done) {
     .pipe(htmlmin({
       collapseWhitespace: false,
       removeComments: false,
-      removeEmptyAttributes: false,
+      removeEmptyAttributes: false,   // development
       minifyCSS: false,
       minifyJS: false
     }))
     // .pipe(htmlmin({
     //   collapseWhitespace: true,
     //   removeComments: true,
-    //   removeEmptyAttributes: true,
+    //   removeEmptyAttributes: true, // production
     //   minifyCSS: true,
     //   minifyJS: true
     // }))
-    .pipe(gulp.dest(`build/${banner.size}`));
+    .pipe(gulp.dest(`build/${size}`));
   done();
 }
 
+
 // SASS //////////////////////////////////////////////////////////////////////////////
-import * as dartSass from 'sass' // doesn't work even though it's suggested
-// import dartSass from 'sass'
+import autoprefixer from 'gulp-autoprefixer';
+import * as dartSass from 'sass'
 import gulpSass from 'gulp-sass'
 const sass = gulpSass(dartSass) // need dart sass compiler to work
-// const Sass = gulpSass(sass) // need dart sass compiler to work
-
-
-import autoprefixer from 'gulp-autoprefixer';
-
-function compileSCSS(done) {
+function compileSCSS({ size }, done) {
   gulp.src([
     `src/styles/global.scss`,
-    `src/styles/${banner.size}.scss`
+    `src/styles/${size}.scss`
   ])
     .pipe(concat('combined.css'))
-    // .pipe(sass({outputStyled: 'nested'}))  // development
-    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError)) // production
+    .pipe(sass({outputStyled: 'nested'}))  // development
+    // .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError)) // production
     .pipe(autoprefixer('last 2 versions'))
-    .pipe(gulp.dest(`build/${banner.size}`));
+    .pipe(gulp.dest(`build/${size}`));
   done();
 }
 
 
 // JS //////////////////////////////////////////////////////////////////////////////
 import uglify from 'gulp-uglify';
-
-function compileJS(done) {
+function compileJS({ size }, done) {
   gulp.src([
     `src/scripts/global.js`,
-    `src/scripts/${banner.size}.js`
+    `src/scripts/${size}.js`
   ])
     .pipe(concat('combined.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest(`build/${banner.size}`));
+    // .pipe(uglify())      // production
+    .pipe(gulp.dest(`build/${size}`));
   done();
 }
 
+
 // compile all //////////////////////////////////////////////////////////////////////////////
-import banners from './banner.config.json' assert { type: 'json' };
-let banner = {};
-
-gulp.task('compileAll', async (done) => {
-  for (let i = 0; i < banners.length; i++ ) {
-    banner = banners[i];
-
-    compileHBS(done)
-    compileSCSS(done);
-    compileJS(done);
+gulp.task('compile', (done) => {
+  for (const banner of bannerConfig) {
+    compileHBS(banner, done);
+    compileSCSS(banner, done);
+    compileJS(banner, done);
   }
 })
 
 
-
-
-
-
 ////////////////////////////////////////////////////////////////////////////////
-gulp.task('watch', () => {gulp.watch(src, gulp.series(['clean', 'compileAll']))})
-// gulp.task('build', gulp.parallel(['taskHBS', 'taskCSS', 'taskJS']))
+gulp.task('watch', () => {gulp.watch(`src/`, gulp.series(['clean', 'compile']))})
 
 
 import { deleteSync } from 'del';
@@ -120,6 +102,6 @@ gulp.task('clean', async () => deleteSync([`build/*`]) );
 
 gulp.task('default', gulp.series(
   'clean',
-  'compileAll',
+  'compile',
   'watch',
 ));

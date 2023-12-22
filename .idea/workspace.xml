@@ -5,23 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43073f69-db83-47b5-937f-8a6ee0aab534" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/000e81eecb3dc940708c485fd21934b53a135fcd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/24872c3b9fccd02515d98863577bc3e0fbdd9ade" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b19ab1b26ffb755fea2880c0a7384fa52ec67d6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/410cf4b29e86dad4c309362943e6aeb990cd1317" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/a/4af15f16ebcdc44bf0c8f7341c91960eb89afae3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5a5a039db13267660912b21dbc7e72004e091c53" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5a5a039db13267660912b21dbc7e72004e091c53" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b66b2b8ddd00fc5662db5aa77f13791074bd2ad" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b66b2b8ddd00fc5662db5aa77f13791074bd2ad" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5c975582791da6f060261188096d6aad85db6e09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/61a5a07955c77970b274022ba8abc7ba871fd9b8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/80bdec294e8ee612af2f9170d8561bd42fb0fe90" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/80bdec294e8ee612af2f9170d8561bd42fb0fe90" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/990a85f5e72fc21bd93d9e8ddb10d110045a91c8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b3df34ee1fd46cb6070aaa0a252d037d10f16b2d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/9/c993e384aa0f5ce1c6e012b9db86247f2ef463fb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/ce406fe44182b2668a70b6ebfae3336d09776a97" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/f/cf9317c75c86be2cafec420a0e659bd013ad34a5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/b/eb4dab74040755a4e1250b8dfaf1b8198bb7ec30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec766ddca9466ca043271cf7fe1070e33acc8615" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec766ddca9466ca043271cf7fe1070e33acc8615" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee9d2cf188170ffae6c24450b921d4dd26b8dfaf" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee9d2cf188170ffae6c24450b921d4dd26b8dfaf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/0/000e81eecb3dc940708c485fd21934b53a135fcd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/4/24872c3b9fccd02515d98863577bc3e0fbdd9ade" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/b/3b19ab1b26ffb755fea2880c0a7384fa52ec67d6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/1/410cf4b29e86dad4c309362943e6aeb990cd1317" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/a/4af15f16ebcdc44bf0c8f7341c91960eb89afae3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/c/5c975582791da6f060261188096d6aad85db6e09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/1/61a5a07955c77970b274022ba8abc7ba871fd9b8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/9/990a85f5e72fc21bd93d9e8ddb10d110045a91c8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/3/b3df34ee1fd46cb6070aaa0a252d037d10f16b2d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/9/c993e384aa0f5ce1c6e012b9db86247f2ef463fb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/e/ce406fe44182b2668a70b6ebfae3336d09776a97" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/f/cf9317c75c86be2cafec420a0e659bd013ad34a5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/b/eb4dab74040755a4e1250b8dfaf1b8198bb7ec30" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/combined.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/combined.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banner.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/banner.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/160x600/combined.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/160x600/combined.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/160x600/combined.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/160x600/combined.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/300x250/combined.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/300x250/combined.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/300x250/combined.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/300x250/combined.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/templateData.json" beforeDir="false" afterPath="$PROJECT_DIR$/banner.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/global/scripts/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/global/styles/global.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/layouts/default.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/layouts/default.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/views/160x600/index.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/views/300x250/index.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/views/300x600/index.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/views/728x90/index.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/160x600.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/160x600.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/300x250.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/300x250.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +117,8 @@
       <workItem from="1702505157628" duration="825000" />
       <workItem from="1702841381419" duration="76000" />
       <workItem from="1702841958267" duration="769000" />
-      <workItem from="1703117121781" duration="14790000" />
+      <workItem from="1703117121781" duration="15496000" />
+      <workItem from="1703216294554" duration="2880000" />
     </task>
     <servers />
   </component>
