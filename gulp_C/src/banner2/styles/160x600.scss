@@ -1,0 +1,16 @@
+$banner_height: 600px;
+$banner_width: 160px;
+$isi_height: 0;
+$pi_height: 0;
+/////////////////////////////////////////////////////
+#container {
+  height: $banner_height;
+  width: $banner_width;
+}
+#background-holder {
+  height: $banner_height - $isi_height - $pi_height;
+  width: $banner_width;
+}
+#banner2-160x600 {
+  background: red;
+}

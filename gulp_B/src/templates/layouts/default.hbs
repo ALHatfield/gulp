@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> head }}
+</head>
+<body>
+<script type="text/javascript">
+  var clickTag1 = "https://www.yescartahcp.com/2l-large-b-cell-lymphoma/efficacy";   // Main exit
+  var clickTag2 = "https://www.gilead.com/-/media/files/pdfs/medicines/oncology/yescarta/yescarta-pi.pdf";   // PI exit
+</script>
+<div id="container">
+    <div id="background-holder" class="clickTag1">
+        <!--IMAGES-->
+        <div id="frame1-bg" class="pos-abs hide frame1-in"></div>
+
+
+        <!--COPY-->
+        <div id="frame1-copy" class="pos-abs hide text-white fw-600 frame1">Consider moving <span class=highlight>YESCARTA</span> up</div>
+        <div id="frame2-copy" class="pos-abs hide text-white fw-600 frame2">
+            Consider moving <span class=highlight>YESCARTA</span> up
+            {{#is size "160x600"}}<br>{{/is}}
+            {{#is size "300x600"}}<br>{{/is}}
+            in your treatment
+            {{#is size "300x600"}}<br>{{/is}}
+            algorithm.
+        </div>
+
+
+
+<!--        OPTION 1-->
+        {{#is set 1}}
+            <!--IMAGES-->
+            <div id="frame1-bg" class="pos-abs hide frame1-in"></div>
+
+
+            <!--COPY-->
+            <div id="frame1-copy" class="pos-abs hide text-white fw-600 frame1">Consider moving <span class=highlight>YESCARTA</span> up</div>
+            <div id="frame2-copy" class="pos-abs hide text-white fw-600 frame2">
+                Consider moving <span class=highlight>YESCARTA</span> up
+                {{#is size "160x600"}}<br>{{/is}}
+                {{#is size "300x600"}}<br>{{/is}}
+                in your treatment
+                {{#is size "300x600"}}<br>{{/is}}
+                algorithm.
+            </div>
+
+        {{/is}}
+
+
+    </div>
+    {{> ISI}}
+
+    <div id="PI" class="pos-abs clickTag2 uppercase fw-400">
+      PLEASE SEE FULL <span class="bold fw-700">PRESCRIBING INFORMATION</span>, INCLUDING <span class="fw-700">BOXED WARNING</span>
+    </div>
+
+
+
+<!--    <img src="guide1.png" style="position:absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 0.5;">-->
+</div>
+
+{{> scripts }}
+</body>
+</html>
