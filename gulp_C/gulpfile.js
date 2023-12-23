@@ -1,5 +1,5 @@
 import autoprefixer from 'gulp-autoprefixer';
-// import bannerConfig from './banner.config2.json' assert { type: 'json' };
+import bannerConfig from './banner.config.json' assert { type: 'json' };
 import concat from 'gulp-concat';
 import { deleteSync } from 'del';
 import gulp from 'gulp';
@@ -11,12 +11,10 @@ import rename from 'gulp-rename';
 import uglify from 'gulp-uglify';
 const sass = gulpSass(dartSass) // need dart sass compiler to work
 
-// handlebar options/helpers
-
 
 // compile handlebars
-function compileHBS({ size, width, height, set }, path, done) {
-  let data = { size, width, height, set, production: false }
+function compileHBS({ size, width, height }, path, done) {
+  let data = { size, width, height }
   let options = {
     batch : [`${path.src}/templates/partials`],
     helpers : {
@@ -79,9 +77,6 @@ function compileJS({ size }, path, done) {
 
 
 // loop and compile banner.config.json
-import bannerConfig from './banner.config.json' assert { type: 'json' };
-
-
 async function configureBuildPath(bannerConfig, set, { size }) {
   if (Object.keys(bannerConfig).length === 1) {
     return {
