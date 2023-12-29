@@ -75,11 +75,21 @@ function compileJS({ size }, done) {
   done();
 }
 
+function copyImages({ size }, done) {
+  gulp.src([
+    `src/images/*.{jpg,jpeg,png,svg}`,
+    `src/images/${size}/*.{jpg,jpeg,png,svg}`
+  ])
+    .pipe(gulp.dest(`build/${size}`));
+  done()
+}
+
 
 
 // loop and compile banner.config.json
 gulp.task('compile', (done) => {
   for (const banner of bannerConfig) {
+    copyImages(banner, done)
     compileHBS(banner, done);
     compileSCSS(banner, done);
     compileJS(banner, done);
