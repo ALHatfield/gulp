@@ -38,13 +38,6 @@ function compileHBS({ size, width, height }, done) {
       minifyCSS: false,
       minifyJS: false
     }))
-    // .pipe(htmlmin({
-    //   collapseWhitespace: true,
-    //   removeComments: true,
-    //   removeEmptyAttributes: true, // production
-    //   minifyCSS: true,
-    //   minifyJS: true
-    // }))
     .pipe(gulp.dest(`build/${size}`));
   done();
 }
@@ -57,7 +50,6 @@ function compileSCSS({ size }, done) {
   ])
     .pipe(concat('combined.css'))
     .pipe(sass({outputStyled: 'nested'}))  // development
-    // .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError)) // production
     .pipe(autoprefixer('last 2 versions'))
     .pipe(gulp.dest(`build/${size}`));
   done();
@@ -70,7 +62,6 @@ function compileJS({ size }, done) {
     `src/scripts/${size}.js`
   ])
     .pipe(concat('combined.js'))
-    // .pipe(uglify())                        // production
     .pipe(gulp.dest(`build/${size}`));
   done();
 }
@@ -84,7 +75,34 @@ function copyImages({ size }, done) {
   done()
 }
 
+// package files for hand off
+function packageFiles({ size }, done) {
+  gulp.src(`build/${size}/index.html`)
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true,
+      removeEmptyAttributes: true,
+      minifyCSS: true,
+      minifyJS: true
+    }))
+    .pipe(gulp.dest(`build/${size}`));
 
+  gulp.src(`build/${size}/combined.css`)
+    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+    .pipe(gulp.dest(`build/${size}`));
+
+  gulp.src(`build/${size}/combined.js`)
+    .pipe(uglify())
+    .pipe(gulp.dest(`build/${size}`));
+
+  done()
+}
+
+gulp.task('package', (done) => {
+  for (const banner of bannerConfig) {
+    packageFiles(banner, done)
+  }
+})
 
 // loop and compile banner.config.json
 gulp.task('compile', (done) => {
