@@ -1,5 +1,3 @@
-//
-console.log('global.js')
 const doc = document;
 const win = window;
 
@@ -28,6 +26,7 @@ let $frame3;
 let $frame4;
 
 //
+let $frame1_bg;
 // let $frame1_copy;
 // let $frame1_cover;
 // let $frame1_logoKO;
@@ -44,12 +43,6 @@ let animate = function () {
   // in
   tl.to($frame1, {delay: 0, duration: 0.5, opacity: 1}, "frame1");
   tl.to($frame1_in, {delay: 0, duration: 0.5, opacity: 1}, "frame1");
-
-  tl.to($frame1_cover, {delay: 0, duration: 0.5, y: -250 }, "frame1+=2.0");
-  tl.to($frame1_copy, {delay: 0, duration: 0.5, color: "#48326F" }, "frame1+=2.0");
-  tl.to($frame1_logoKO, {delay: 0, duration: 0.5, opacity: 0 }, "frame1+=2.0");
-  tl.to($frame2_logo, {delay: 0, duration: 0.5, opacity: 1 }, "frame1+=2.0");
-
 
   tl.add("frame2", 5.0);
   // out
@@ -119,6 +112,21 @@ function enablerInitHandler() {
       let elem_variable = `$${elem.id.replace('-', '_')}`;
       win[elem_variable] = doc.getElementById(`${elem.id}`);
     }
+    // if (elem.classList) {
+    //   elem.classList.forEach((className) => {
+    //     if (className.includes("frame")) {
+    //       console.log(className)
+    //       frameList.push(className)
+    //       // frameList = [...new Set(className)];
+    //     }
+    //   })
+    //   frameList = [...new Set(frameList)];
+    //   console.log(frameList);
+    //   frameList.forEach((className) => {
+    //     win[`${className}`] =
+    //   })
+    //
+    // }
   }
 
 

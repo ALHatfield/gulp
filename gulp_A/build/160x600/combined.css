@@ -74,6 +74,16 @@ sup {
   line-height: 0;
 }
 
+#container,
+#background-holder {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
 #container {
   height: 600px;
   width: 160px;
@@ -84,100 +94,12 @@ sup {
   width: 160px;
 }
 
-#frame1-copy {
-  font-size: 20px;
-  line-height: 22px;
-  width: 100%;
-  padding: 0 10px;
-  top: 128px;
-  left: 0;
-}
-
-#frame1-cta {
-  font-size: 14px;
-  line-height: 12px;
-  width: 133px;
-  padding: 7px 0 7px 10px;
-  top: 260px;
-  left: 14px;
-}
-
-#frame2-copy1 {
-  font-size: 17px;
-  line-height: 22px;
-  width: 100%;
-  padding: 0 10px;
-  top: 120px;
-  left: 0;
-}
-
-#frame3-copy1 {
-  font-size: 17px;
-  line-height: 22px;
-  width: 100%;
-  padding: 0 0px;
-  top: 98px;
-  left: 0;
-}
-
-#frame3-footnote1 {
-  font-size: 7px;
-  line-height: 9px;
-  width: 100%;
-  padding: 0 0;
-  top: 573px;
-  left: unset;
-  right: 10px;
-  text-align: end;
-}
-
-#frame1-background {
-  width: 161px;
-  height: 760px;
-  background-image: url(Background.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: -161px;
-  left: 0;
-}
-
-#frame1-viewfinder {
-  width: 150px;
-  height: 364px;
-  background-image: url(viewfinder.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: 370px;
-  left: 5px;
-}
-
-#frame1-madrigal {
-  width: 98px;
-  height: 46px;
-  background-image: url(madrigal_color.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: 30px;
-  left: 31px;
-}
-
-#ISI {
-  border-top: 1px solid #9a9b9e;
-  bottom: 0;
-  height: 0;
+#frame1-bg {
   width: 160px;
-}
-
-#ISICopy {
-  padding-bottom: 20px;
-}
-
-#PI {
-  bottom: 0px;
+  height: 600px;
+  background-image: url(bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0;
   left: 0;
-  width: 160px;
-  height: 0;
-  font-size: 9px;
-  text-align: center;
-  padding: 2px 0;
 }

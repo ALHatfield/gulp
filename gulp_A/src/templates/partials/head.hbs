@@ -1,17 +1,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-{{#contains title "160x600"}}
+{{!-- {{#is title "160x600"}}
     <meta name="ad.size" content="width=160,height=600">
-{{/contains}}
-{{#contains title "300x250"}}
+{{/is}}
+{{#is title "300x250"}}
     <meta name="ad.size" content="width=300,height=250">
-{{/contains}}
-{{#contains title "500x60"}}
+{{/is}}
+{{#is title "500x60"}}
     <meta name="ad.size" content="width=500,height=60">
-{{/contains}}
-{{#contains title "728x90"}}
+{{/is}}
+{{#is title "728x90"}}
     <meta name="ad.size" content="width=728,height=90">
-{{/contains}}
+{{/is}} --}}
 <title>{{title}}</title>
 <style>
     * {
@@ -41,48 +41,5 @@
         overflow: hidden;
         position: absolute;
     }
-    {{#contains title "160x600"}}
-        body {
-            height:600px;
-            width:160px;
-        }
-        #container	{
-            height:600px;
-            width:160px;
-        }
-    {{/contains}}
-
-    {{#contains title "300x250"}}
-        body {
-            height:250px;
-            width:300px;
-        }
-        #container	{
-            height:250px;
-            width:300px;
-        }
-    {{/contains}}
-
-   {{#contains title "500x60"}}
-        body {
-            height:60px;
-            width:500px;
-        }
-        #container	{
-            height:60px;
-            width:500px;
-        }
-    {{/contains}}
-
-
-    {{#contains title "728x90"}}
-        body {
-            height:90px;
-            width:728px;
-        }
-        #container	{
-            height:90px;
-            width:728px;
-        }
-    {{/contains}}
+    
 </style>

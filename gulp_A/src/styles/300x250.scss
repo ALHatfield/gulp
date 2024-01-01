@@ -12,106 +12,12 @@ $pi_height: 0;
   width: $banner_width;
 }
 /////////////////////////////////////////////////////
-#frame1-copy {
-  font-size: 18px;
-  line-height: 10px;
-  width: 100%;
-  padding: 0 0;
-  top: 74px;
-  left: 0;
-}
-#frame1-cta {
-  font-size: 13px;
-  line-height: 12px;
-  width: 133px;
-  padding: 9px 0 7px 11px;
-  top: 140px;
-  left: 153px;
-  #arrow {
-    padding-left: 4px;
-  }
-}
-#frame2-copy1 {
-  font-size: 18px;
-  line-height: 20px;
-  width: 100%;
-  padding: 0 0;
-  top: 60px;
-  left: 0;
-  text-align: center;
-}
-#frame3-copy1 {
-  font-size: 18px;
-  line-height: 20px;
-  width: 100%;
-  padding: 0 10px;
-  top: 42px;
-  left: 0;
-  text-align: center;
-}
-
-#frame3-footnote1 {
-  font-size: 7px;
-  line-height: 9px;
-  width: 100%;
-  padding: 0 0;
-  top: 225px;
-  left: unset;
-  right: 10px;
-  text-align: end;
-}
-
-#frame1-background {
+#frame1-bg {
   width: 300px;
-  height: 333px;
-  background-image: url(Background.jpg);
+  height: 250px;
+  background-image: url(bg.png);
   background-repeat: no-repeat;
   background-size: contain;
-  top: -51px;
+  top: 0;
   left: 0;
-}
-#frame1-madrigal {
-  width: 102px;
-  height: 126px;
-  top: 12px;
-  left: 99px;
-}
-#frame1-viewfinder {
-  width: 125px;
-  height: 154px;
-  background-image: url(viewfinder.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: 129px;
-  left: 15px;
-}
-
-
-
-
-
-/////////////////////////////////////////////////////
-#ISI {
-  border-top: 1px solid #9a9b9e;
-  bottom: $pi_height;
-  height: $isi_height;
-  width: $banner_width;
-}
-
-#ISIWrapper {
-
-}
-
-#ISICopy {
-  padding-bottom: 20px;
-}
-
-#PI {
-  bottom: 0px;
-  left: 0;
-  width: $banner_width;
-  height: $pi_height;
-  font-size: 9px;
-  text-align: center;
-  padding: 2px 0;
 }
