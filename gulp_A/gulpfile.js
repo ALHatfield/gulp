@@ -25,9 +25,7 @@ let options = {
 }
 
 // compile handlebars
-function compileHBS({ size, width, height }, done) {
-  let data = { size, width, height }
-
+function compileHBS(data, done) {
   gulp.src('src/templates/layouts/default.hbs')
     .pipe(handlebars(data, options))
     .pipe(rename('index.html'))
@@ -39,6 +37,7 @@ function compileHBS({ size, width, height }, done) {
       minifyJS: false
     }))
     .pipe(gulp.dest(`build/${size}`));
+
   done();
 }
 
@@ -52,6 +51,7 @@ function compileSCSS({ size }, done) {
     .pipe(sass({outputStyled: 'nested'}))  // development
     .pipe(autoprefixer('last 2 versions'))
     .pipe(gulp.dest(`build/${size}`));
+
   done();
 }
 
@@ -63,15 +63,18 @@ function compileJS({ size }, done) {
   ])
     .pipe(concat('combined.js'))
     .pipe(gulp.dest(`build/${size}`));
+
   done();
 }
 
+// compile images
 function copyImages({ size }, done) {
   gulp.src([
     `src/images/*.{jpg,jpeg,png,svg}`,
     `src/images/${size}/*.{jpg,jpeg,png,svg}`
   ])
     .pipe(gulp.dest(`build/${size}`));
+
   done()
 }
 
@@ -97,6 +100,9 @@ function packageFiles({ size }, done) {
 
   done()
 }
+
+
+// Gulp tasks /////////////////////////////////////////////////////////////////////////////////////
 
 gulp.task('package', (done) => {
   for (const banner of bannerConfig) {
