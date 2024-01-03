@@ -17,12 +17,12 @@ const sass = gulpSass(dartSass) // need dart sass compiler to work
 let options = {
   batch : [`src/templates/partials`],
   helpers : {
-    contains: function(x, y, z) {
-      if (x === y) return z.fn(this);
-    },
     is: function(x, y, z) {
       if (x === y) return z.fn(this);
-    }
+    },
+    isnt: function(x, y, z) {
+      if (x !== y) return z.fn(this);
+    },
   }
 }
 
@@ -59,8 +59,9 @@ function compileSCSS({ size }, done) {
 
 // compile javascript
 function compileJS({ size }, done) {
-  gulp.src(`src/utils/*`)
+  gulp.src(`src/utils/*.js`)
     .pipe(gulp.dest(`build/${size}`));
+
   gulp.src([
     `src/scripts/global.js`,
     `src/scripts/${size}.js`
@@ -79,7 +80,7 @@ function copyImages({ size }, done) {
   ])
     .pipe(gulp.dest(`build/${size}`));
 
-  done()
+  done();
 }
 
 // package files for hand off
@@ -93,7 +94,7 @@ function packageFiles({ size }, done) {
         }
       })
     }
-  })
+  });
 
   gulp.src(`build/${size}/index.html`)
     .pipe(htmlmin({
@@ -112,9 +113,8 @@ function packageFiles({ size }, done) {
   gulp.src(`build/${size}/combined.js`)
     .pipe(uglify())
     .pipe(gulp.dest(`build/${size}`));
-
-
-  done()
+  
+  done();
 }
 
 
@@ -122,9 +122,9 @@ function packageFiles({ size }, done) {
 
 gulp.task('package', (done) => {
   for (const banner of bannerConfig) {
-    packageFiles(banner, done)
+    packageFiles(banner, done);
   }
-})
+});
 
 // loop and compile banner.config.json
 gulp.task('compile', (done) => {
@@ -134,8 +134,8 @@ gulp.task('compile', (done) => {
     compileSCSS(banner, done);
     compileJS(banner, done);
   }
-})
+});
 
 gulp.task('clean', async () => deleteSync([`build/*`]) );
-gulp.task('watch', () => {gulp.watch(`src/`, gulp.series(['clean', 'compile']))})
+gulp.task('watch', () => {gulp.watch(`src/`, gulp.series(['clean', 'compile']))});
 gulp.task('default', gulp.series( 'clean', 'compile', 'watch' ));

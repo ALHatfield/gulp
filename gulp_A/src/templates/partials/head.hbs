@@ -1,17 +1,5 @@
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-{{!-- {{#is title "160x600"}}
-    <meta name="ad.size" content="width=160,height=600">
-{{/is}}
-{{#is title "300x250"}}
-    <meta name="ad.size" content="width=300,height=250">
-{{/is}}
-{{#is title "500x60"}}
-    <meta name="ad.size" content="width=500,height=60">
-{{/is}}
-{{#is title "728x90"}}
-    <meta name="ad.size" content="width=728,height=90">
-{{/is}} --}}
+<meta name="{{ size }}" content="width={{ width }}, height={{ height }}, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>{{title}}</title>
 <style>
     * {
