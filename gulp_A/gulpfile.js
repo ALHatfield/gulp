@@ -2,6 +2,7 @@ import autoprefixer from 'gulp-autoprefixer';
 import bannerConfig from './banner.config.json' assert { type: 'json' };
 import concat from 'gulp-concat';
 import { deleteSync } from 'del';
+import fs from "fs";
 import gulp from 'gulp';
 import * as dartSass from 'sass'
 import gulpSass from 'gulp-sass'
@@ -9,6 +10,7 @@ import handlebars from 'gulp-compile-handlebars';
 import htmlmin from 'gulp-htmlmin';
 import rename from 'gulp-rename';
 import uglify from 'gulp-uglify';
+import { stringify } from 'querystring';
 const sass = gulpSass(dartSass) // need dart sass compiler to work
 
 // handlebar options/helpers
@@ -36,7 +38,7 @@ function compileHBS(data, done) {
       minifyCSS: false,
       minifyJS: false
     }))
-    .pipe(gulp.dest(`build/${size}`));
+    .pipe(gulp.dest(`build/${data.size}`));
 
   done();
 }
@@ -57,6 +59,8 @@ function compileSCSS({ size }, done) {
 
 // compile javascript
 function compileJS({ size }, done) {
+  gulp.src(`src/utils/*`)
+    .pipe(gulp.dest(`build/${size}`));
   gulp.src([
     `src/scripts/global.js`,
     `src/scripts/${size}.js`
@@ -80,6 +84,17 @@ function copyImages({ size }, done) {
 
 // package files for hand off
 function packageFiles({ size }, done) {
+  let expel = ["guide", "ISI_Expander"];
+  fs.readdir(`build/${size}/`, (err, files) => {
+    for (const file of files) {
+      expel.forEach(term => {
+        if (file.toString().includes(term)){
+          deleteSync(`build/${size}/${file}`)
+        }
+      })
+    }
+  })
+
   gulp.src(`build/${size}/index.html`)
     .pipe(htmlmin({
       collapseWhitespace: true,
@@ -97,6 +112,7 @@ function packageFiles({ size }, done) {
   gulp.src(`build/${size}/combined.js`)
     .pipe(uglify())
     .pipe(gulp.dest(`build/${size}`));
+
 
   done()
 }
