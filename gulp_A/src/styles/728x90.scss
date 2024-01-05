@@ -1,6 +1,7 @@
-$banner_height: 600px;
-$banner_width: 160px;
+$banner_height: 90px;
+$banner_width: 728px;
 $isi_height: 76px;
+$isi_width: 100px;
 $pi_height: 14px;
 /////////////////////////////////////////////////////
 #container {
@@ -8,8 +9,8 @@ $pi_height: 14px;
   width: $banner_width;
 }
 #background-holder {
-  height: $banner_height - $isi_height - $pi_height;
-  width: $banner_width;
+  height: $banner_height;
+  width: $banner_width - $isi_width;
 }
 /////////////////////////////////////////////////////
 #frame2-copy1 {
@@ -53,24 +54,27 @@ $pi_height: 14px;
 
 /////////////////////////////////////////////////////
 #ISI {
-  border-top: 1px solid #9a9b9e;
+  border-left: 1px solid #9a9b9e;
   bottom: $pi_height;
   height: $isi_height;
-  width: $banner_width;
+  left: unset;
+  right: 0;
+  width: $isi_width;
 }
 
 #ISIWrapper {
 
 }
-
 #ISICopy {
   padding-bottom: 20px;
 }
 
 #PI {
+  border-left: 1px solid #9a9b9e;
   bottom: 0px;
-  left: 0;
-  width: $banner_width;
+  left: unset;
+  right: 0;
+  width: $isi_width;
   height: $pi_height;
   font-size: 9px;
   text-align: center;

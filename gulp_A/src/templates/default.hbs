@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> head }}
+</head>
+<body>
+<script type="text/javascript">
+    var clickTag1 = "";   // Main exit
+    var clickTag2 = "";   // PI exit
+    var clickTag3 = "";
+    var clickTag4 = "";
+</script>
+<div id="container">
+    <div id="background-holder" class="clickTag1">
+        <!--IMAGES-->
+        <div id="frame1-img1" class="pos-abs hide frame1-in"></div>
+        <div id="frame1-logo" class="pos-abs hide frame1-in"></div>
+        <div id="frame3-line" class="pos-abs hide frame3"></div>
+
+
+
+        <!--COPY-->
+        <div id="frame2-copy1" class="pos-abs hide frame2">This indication is approved under accelerated approval based on improvement of NASH and fibrosis. Continued approval for this indication may be contingent upon verification and description of clinical benefit in confirmatory trials.</div>
+        <div id="frame2-copy2" class="pos-abs hide frame2">NASH=nonalcoholic steatohepatitis.</div>
+        <div id="frame3-copy1" class="pos-abs hide frame3 primary-color font-brand">The <b>first and only</b> FDA-approved treatment for NASH with liver fibrosis</div>
+        <div id="frame3-cta" class="pos-abs hide frame3 font-brand">Explore the Data</div>
+
+
+    </div>
+
+    {{> ISI}}
+
+    <div id="PI" class="pos-abs text-bold clickTag2">
+        Important Safety Information and Indication
+    </div>
+
+<!--      <img src="guide3.png" style="position:absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 0.5;">-->
+</div>
+
+{{> scripts }}
+</body>
+</html>

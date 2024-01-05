@@ -27,18 +27,20 @@ let options = {
 }
 
 // compile handlebars
-function compileHBS(data, done) {
-  gulp.src('src/templates/layouts/default.hbs')
-    .pipe(handlebars(data, options))
+function compileHBS(bannerData, done, production) {
+  bannerData = { ...bannerData, production }
+
+  gulp.src('src/templates/default.hbs')
+    .pipe(handlebars(bannerData, options))
     .pipe(rename('index.html'))
     .pipe(htmlmin({
-      collapseWhitespace: false,
-      removeComments: false,
-      removeEmptyAttributes: false,   // development
-      minifyCSS: false,
-      minifyJS: false
+      collapseWhitespace: production,
+      removeComments: production,
+      removeEmptyAttributes: production,
+      minifyCSS: production,
+      minifyJS: production
     }))
-    .pipe(gulp.dest(`build/${data.size}`));
+    .pipe(gulp.dest(`build/${bannerData.size}`));
 
   done();
 }
@@ -50,7 +52,7 @@ function compileSCSS({ size }, done) {
     `src/styles/${size}.scss`
   ])
     .pipe(concat('combined.css'))
-    .pipe(sass({outputStyled: 'nested'}))  // development
+    .pipe(sass({outputStyled: 'nested'}))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(gulp.dest(`build/${size}`));
 
@@ -58,11 +60,19 @@ function compileSCSS({ size }, done) {
 }
 
 // compile javascript
-function compileJS({ size }, done) {
+function compileJS(bannerData, done) {
+  let { size } = bannerData;
+
+  if (bannerData.isi) {
+    //   then add ISIScroller.js
+    //   else don't
+  }
+
   gulp.src(`src/utils/*.js`)
     .pipe(gulp.dest(`build/${size}`));
 
   gulp.src([
+    `src/scripts/ISIScroller.js`,
     `src/scripts/global.js`,
     `src/scripts/${size}.js`
   ])
@@ -84,8 +94,10 @@ function copyImages({ size }, done) {
 }
 
 // package files for hand off
-function packageFiles({ size }, done) {
+function packageFiles(banner, done) {
+  let { size } = banner;
   let expel = ["guide", "ISI_Expander"];
+
   fs.readdir(`build/${size}/`, (err, files) => {
     for (const file of files) {
       expel.forEach(term => {
@@ -96,16 +108,6 @@ function packageFiles({ size }, done) {
     }
   });
 
-  gulp.src(`build/${size}/index.html`)
-    .pipe(htmlmin({
-      collapseWhitespace: true,
-      removeComments: true,
-      removeEmptyAttributes: true,
-      minifyCSS: true,
-      minifyJS: true
-    }))
-    .pipe(gulp.dest(`build/${size}`));
-
   gulp.src(`build/${size}/combined.css`)
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(gulp.dest(`build/${size}`));
@@ -113,15 +115,15 @@ function packageFiles({ size }, done) {
   gulp.src(`build/${size}/combined.js`)
     .pipe(uglify())
     .pipe(gulp.dest(`build/${size}`));
-  
+
   done();
 }
 
 
 // Gulp tasks /////////////////////////////////////////////////////////////////////////////////////
-
 gulp.task('package', (done) => {
   for (const banner of bannerConfig) {
+    compileHBS(banner, done, true);
     packageFiles(banner, done);
   }
 });
@@ -130,12 +132,12 @@ gulp.task('package', (done) => {
 gulp.task('compile', (done) => {
   for (const banner of bannerConfig) {
     copyImages(banner, done)
-    compileHBS(banner, done);
+    compileHBS(banner, done, false,);
     compileSCSS(banner, done);
     compileJS(banner, done);
   }
 });
 
-gulp.task('clean', async () => deleteSync([`build/*`]) );
 gulp.task('watch', () => {gulp.watch(`src/`, gulp.series(['clean', 'compile']))});
+gulp.task('clean', async () => deleteSync([`build/*`]) );
 gulp.task('default', gulp.series( 'clean', 'compile', 'watch' ));

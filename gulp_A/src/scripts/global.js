@@ -1,13 +1,8 @@
 const doc = document;
 const win = window;
-
-
-
-
 //
-var ISIScroller;
-// var bannerWidth;
-// var bannerHeight;
+var bannerWidth;
+var bannerHeight;
 let $isi;
 let $pi;
 let $backgroundHolder;
@@ -21,18 +16,22 @@ let start_time;
 //
 let $frame1;
 let $frame1_in;
+let $frame1_out;
 let $frame2;
+let $frame2_in;
+let $frame2_out;
 let $frame3;
-let $frame4;
-
+let $frame3_in;
+let $frame3_out;
 //
-let $frame1_bg;
-// let $frame1_copy;
-// let $frame1_cover;
-// let $frame1_logoKO;
-// let $frame2_logo;
+// let $frame2_copy1;
+// let $frame2_copy2;
+// let $frame3_copy1;
+// let $frame3_cta;
+// //
+// let $frame1_logo;
 
-
+//%%%% ImageVariables %%%%
 
 //
 let animate = function () {
@@ -44,47 +43,67 @@ let animate = function () {
   tl.to($frame1, {delay: 0, duration: 0.5, opacity: 1}, "frame1");
   tl.to($frame1_in, {delay: 0, duration: 0.5, opacity: 1}, "frame1");
 
-  tl.add("frame2", 5.0);
+
+
+  tl.add("frame2", 2.5);
   // out
   tl.to($frame1, {delay: 0, duration: 0.5, opacity: 0}, "frame2");
-
+  tl.to($frame2_out, {delay: 0, duration: 0.5, opacity: 0}, "frame2");
+  tl.to($frame1_logo, {delay: 0, duration: 0.5, scale: 0.7, x: -86, y: -5 }, "frame2-=0.5");
   // in
   tl.to($frame2, {delay: 0, duration: 0.5, opacity: 1}, "frame2");
+  tl.to($frame2_in, {delay: 0, duration: 0.5, opacity: 1}, "frame2");
 
 
 
-  tl.add("frame3", 8.5);
+  tl.add("frame3", 7.0);
   // out
   tl.to($frame2, {delay: 0, duration: 0.5, opacity: 0}, "frame3");
+  tl.to($frame3_out, {delay: 0, duration: 0.5, opacity: 0}, "frame3");
   // in
   tl.to($frame3, {delay: 0, duration: 0.5, opacity: 1}, "frame3");
-
-
-
-  tl.add("frame4", 12.5);
-  // out
-  tl.to($frame3, {delay: 0, duration: 0.5, opacity: 0}, "frame4");
-  // in
-  tl.to($frame4, {delay: 0, duration: 0.5, opacity: 1}, "frame4");
+  tl.to($frame3_in, {delay: 0, duration: 0.5, opacity: 1}, "frame3");
 
 
 
 
 
-  tl.call(() => {
+
+  tl.call(function () {
+    startISIScroll()
     console.log(performance.now()/1000 - start_time)
   });
 }
 
-
-
-
+// Function for initiating automatic ISI scroll
+let startISIScroll = () => {
+  if(window.ISIScroller) {
+    ISIScroller = new window.ISIScroller(true);
+    ISIScroller.start();
+  }
+}
+// Function to control the click on the PI link
+let exitHandler3 = (e) =>  {
+  "use strict";
+  e.preventDefault();
+  e.stopPropagation();
+  window.open(window.clickTag3);
+  Enabler.exit("clickTag3");
+}
+// Function to control the click on the PI link
+let exitHandler2 = (e) =>  {
+  "use strict";
+  e.preventDefault();
+  e.stopPropagation();
+  window.open(window.clickTag2);
+  Enabler.exit("clickTag2");
+}
 // Function to control the click on the click on the banner
 let exitHandler1 = (e) =>  {
   "use strict";
   e.preventDefault();
   e.stopPropagation();
-  win.open(win.clickTag1);
+  window.open(window.clickTag1);
   Enabler.exit("clickTag1");
 }
 
@@ -94,43 +113,45 @@ function enablerInitHandler() {
   $clickTag1.forEach(function (elem) {
     elem.addEventListener("click", exitHandler1, false);
   });
-
+  $clickTag2 = doc.querySelectorAll(".clickTag2");
+  $clickTag2.forEach(function (elem) {
+    elem.addEventListener("click", exitHandler2, false);
+  });
+  $clickTag3 = doc.querySelectorAll(".clickTag3");
+  $clickTag3.forEach(function (elem) {
+    elem.addEventListener("click", exitHandler3, false);
+  });
+  //
+  $isi = doc.getElementById("ISI");
+  $pi = doc.getElementById("PI");
+  $backgroundHolder = doc.getElementById("background-holder");
+  bannerWidth = doc.getElementById("container").offsetWidth;
+  bannerHeight = doc.getElementById("container").offsetHeight;
   //
   $frame1 = doc.querySelectorAll(".frame1");
   $frame1_in = doc.querySelectorAll(".frame1-in");
+  $frame1_out = doc.querySelectorAll(".frame1-out");
   $frame2 = doc.querySelectorAll(".frame2");
+  $frame2_in = doc.querySelectorAll(".frame2-in");
+  $frame2_out = doc.querySelectorAll(".frame2-out");
   $frame3 = doc.querySelectorAll(".frame3");
-  $frame4 = doc.querySelectorAll(".frame4");
+  $frame3_in = doc.querySelectorAll(".frame3-in");
+  $frame3_out = doc.querySelectorAll(".frame3-out");
   //
-
-  $backgroundHolder = doc.getElementById("background-holder");
-
-  let frameList = [];
+  // $frame2_copy1 = doc.getElementById("frame2-copy1");
+  // $frame2_copy2 = doc.getElementById("frame2-copy2");
+  // $frame3_copy1 = doc.getElementById("frame3-copy1");
+  // $frame3_cta = doc.getElementById("frame3-cta");
+  //
+  // $frame1_logo = doc.getElementById("frame1-logo");
 
   for (const elem of $backgroundHolder.children) {
     if (elem.id) {
       let elem_variable = `$${elem.id.replace('-', '_')}`;
       win[elem_variable] = doc.getElementById(`${elem.id}`);
     }
-    // if (elem.classList) {
-    //   elem.classList.forEach((className) => {
-    //     if (className.includes("frame")) {
-    //       console.log(className)
-    //       frameList.push(className)
-    //       // frameList = [...new Set(className)];
-    //     }
-    //   })
-    //   frameList = [...new Set(frameList)];
-    //   console.log(frameList);
-    //   frameList.forEach((className) => {
-    //     win[`${className}`] =
-    //   })
-    //
-    // }
   }
 
-
-  //
 
   //
   tl = gsap.timeline();
