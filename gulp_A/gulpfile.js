@@ -60,23 +60,22 @@ function compileSCSS({ size }, done) {
 }
 
 // compile javascript
-function compileJS(bannerData, done) {
-  let { size } = bannerData;
+function compileJS({ size, isi }, done) {
 
-  if (bannerData.isi) {
-    //   then add ISIScroller.js
-    //   else don't
-  }
-
-  gulp.src(`src/utils/*.js`)
-    .pipe(gulp.dest(`build/${size}`));
-
-  gulp.src([
-    `src/scripts/ISIScroller.js`,
+  let paths = [
     `src/scripts/global.js`,
     `src/scripts/${size}.js`
-  ])
+  ]
+
+  if (isi) {
+    paths.push(`src/scripts/ISIScroller.js`)
+  }
+
+  gulp.src(paths)
     .pipe(concat('combined.js'))
+    .pipe(gulp.dest(`build/${size}`));
+
+  gulp.src(`src/utils/*.js`)
     .pipe(gulp.dest(`build/${size}`));
 
   done();
