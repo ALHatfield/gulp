@@ -100,7 +100,7 @@ function packageFiles(banner, done) {
   fs.readdir(`build/${size}/`, (err, files) => {
     for (const file of files) {
       expel.forEach(term => {
-        if (file.toString().includes(term)){
+        if (file.toString().includes(term)) {
           deleteSync(`build/${size}/${file}`)
         }
       })
@@ -131,7 +131,7 @@ gulp.task('package', (done) => {
 gulp.task('compile', (done) => {
   for (const banner of bannerConfig) {
     copyImages(banner, done)
-    compileHBS(banner, done, false,);
+    compileHBS(banner, done, false);
     compileSCSS(banner, done);
     compileJS(banner, done);
   }
