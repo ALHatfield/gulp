@@ -10,7 +10,6 @@ import handlebars from 'gulp-compile-handlebars';
 import htmlmin from 'gulp-htmlmin';
 import rename from 'gulp-rename';
 import uglify from 'gulp-uglify';
-import { stringify } from 'querystring';
 const sass = gulpSass(dartSass) // need dart sass compiler to work
 
 // handlebar options/helpers
@@ -61,7 +60,6 @@ function compileSCSS({ size }, done) {
 
 // compile javascript
 function compileJS({ size, isi }, done) {
-
   let paths = [
     `src/scripts/global.js`,
     `src/scripts/${size}.js`
