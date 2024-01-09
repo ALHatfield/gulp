@@ -1,47 +1,29 @@
 
-Q
-!src/templates/layouts/default.hbs,9/a/9aa9b0a1c5253f791d986673d950ef4cf90577c3
-;
-gulpfile.js,e/e/ee9d2cf188170ffae6c24450b921d4dd26b8dfaf
-9
-	readme.md,2/7/275d783e298228506068436512433d343feb52aa
-<
-package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
-B
-banner.config.json,c/2/c295b42c2593888a73bac3ee15e6841e51a5d769
-F
-src/scripts/160x600.js,6/5/65b461b8a7cb21adabf010a64ae4af8325cf8f59
-F
-src/scripts/300x250.js,2/3/232d36370f819429b6c542abe503f7139c6e0449
-E
-src/scripts/global.js,a/5/a5c388246d075f7a37bea91680b0d04c475dc24d
-G
-src/styles/160x600.scss,e/c/ec766ddca9466ca043271cf7fe1070e33acc8615
-G
-src/styles/300x250.scss,8/5/852ec620f809e66bd30043685dc5917b73e57cc7
-F
-src/styles/global.scss,5/b/5b66b2b8ddd00fc5662db5aa77f13791074bd2ad
-I
-build/160x600/combined.js,5/a/5a5a039db13267660912b21dbc7e72004e091c53
-H
-build/160x600/index.html,8/0/80bdec294e8ee612af2f9170d8561bd42fb0fe90
+V
+&gulp_A/src/templates/partials/head.hbs,7/9/79d776445e5a1c54bed12873473ac2cf9255a755
 A
-package-lock.json,f/a/fa288d1472d29beccb489a676f68739ad365fc47
-J
-build/160x600/combined.css,2/8/28aeea79dfec39eecd4268388771f84aa815d58a
-C
-banner.config2.json,d/4/d4697c1c33aa176513c1ae7ba8e0e1ff99c0e536
-O
-build/set1/160x600/combined.css,d/5/d55a988717e1c36448e44c7ab80fe9c3e68891ed
-O
-build/set1/300x250/combined.css,1/1/1144960d36ba75cc0d21c10dfbe25be677ffd1e0
-O
-build/set2/160x600/combined.css,a/d/adc17a08ed262b7e465a79427b08264da13bcac8
-N
-build/set2/160x600/combined.js,d/0/d03d870052205ff0962fb22ef85c6cc753cfacc7
-O
-build/set2/300x250/combined.css,6/7/6709637a6666f6ce9d2feaa43d5c8e46e49fd082
->
-gulpOption1.js,0/8/08f60371c43a19b64d847d9ce1ba95ff0ebc3322
->
-gulpOption2.js,7/0/70ee7c9bd0ef1e1da3c22134a2527b58c4dce139
+gulp_A/.gitignore,a/f/afa35203703cf70fdcbfe8c6ffabba4b601ffe7a
+B
+gulp_A/gulpfile.js,0/4/0439322c98a47ded00c6f05c81da6e5311f075c0
+U
+%gulp_C/src/banner2/scripts/160x600.js,2/6/2631ca6216d2ebdb0d2ec48f88aadb30e1af3f68
+M
+gulp_B/src/scripts/160x600.js,0/8/08e80feb0180a0a285dad4dab858044f32c75379
+L
+gulp_A/src/scripts/728x90.js,3/6/36b7fb8228e022451e26a836cd4b7cf23e628062
+M
+gulp_A/src/scripts/160x600.js,a/2/a25880f7ca407572c1c0439e0e33a6467284b4bd
+L
+gulp_A/src/scripts/global.js,a/3/a3a7629fd4da093b1f47ec7c7cd3d8e526ff89e1
+P
+ gulp_A/src/templates/default.hbs,0/5/052e6f11406d747e468adbafa3c1c41470c8ff1c
+D
+template/gulpfile.js,0/8/08898b0bd4c2a128520a97c0a65665c28ef209b9
+K
+template/banner.config.json,6/e/6e6c615114c580246019fcb80f3c76ce0751f67d
+R
+"template/src/utils/ISI_Expander.js,0/5/05deec293b741445dea1c18db50d77caaffadf32
+Q
+!template/src/utils/PauseButton.js,d/b/dbeceae45598b24601e2daaf7b2bf3b06c40ccd4
+[
++template/src/templates/partials/scripts.hbs,f/f/ff4dd6deef4ecc579f53966adeb0c65fcd66ddd3
