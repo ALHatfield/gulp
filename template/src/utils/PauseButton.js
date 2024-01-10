@@ -8,7 +8,7 @@ const observer = new MutationObserver(function(mutation) {
   // pause/play
   if (parent.$iframe.attributes.pause) {
     let pause = parent.$iframe.attributes.pause.value;
-    pause == "true" ? tl.pause() : tl.play();
+    pause === "true" ? tl.pause() : tl.play();
   }
   // expander
   if (parent.$iframe.attributes.expand) {

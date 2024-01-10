@@ -26,12 +26,12 @@
             extCSS=document.createElement('link');
             extCSS.setAttribute("rel", "stylesheet");
             extCSS.setAttribute("type", "text/css");
-            extCSS.setAttribute("href", Enabler.getUrl("combined.css"));
+            extCSS.setAttribute("href", Enabler.getUrl("combined.min.css"));
             document.getElementsByTagName("head")[0].appendChild(extCSS);
 
             var extJavascript = document.createElement('script');
             extJavascript.setAttribute('type', 'text/javascript');
-            extJavascript.setAttribute('src', Enabler.getUrl('combined.js'));
+            extJavascript.setAttribute('src', Enabler.getUrl('combined.min.js'));
             document.getElementsByTagName('head')[0].appendChild(extJavascript);
         }
     </script>

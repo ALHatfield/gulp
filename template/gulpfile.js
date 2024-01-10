@@ -10,6 +10,7 @@ import handlebars from 'gulp-compile-handlebars';
 import htmlmin from 'gulp-htmlmin';
 import rename from 'gulp-rename';
 import uglify from 'gulp-uglify';
+import vinylPaths from "vinyl-paths";
 const sass = gulpSass(dartSass) // need dart sass compiler to work
 
 // handlebar options/helpers
@@ -45,11 +46,13 @@ function compileHBS(bannerData, done, production) {
 }
 
 // compile sass
-function compileSCSS({ size }, done) {
-  gulp.src([
+function compileSCSS({ size }, done, production) {
+  let paths = [
     `src/styles/global.scss`,
     `src/styles/${size}.scss`
-  ])
+  ]
+
+  gulp.src(paths)
     .pipe(concat('combined.css'))
     .pipe(sass({outputStyled: 'nested'}))
     .pipe(autoprefixer('last 2 versions'))
@@ -59,7 +62,7 @@ function compileSCSS({ size }, done) {
 }
 
 // compile javascript
-function compileJS({ size, isi }, done) {
+function compileJS({ size, isi }, done, production) {
   let paths = [
     `src/scripts/global.js`,
     `src/scripts/${size}.js`
@@ -81,10 +84,12 @@ function compileJS({ size, isi }, done) {
 
 // compile images
 function copyImages({ size }, done) {
-  gulp.src([
+  let paths = [
     `src/images/*.{jpg,jpeg,png,svg}`,
     `src/images/${size}/*.{jpg,jpeg,png,svg}`
-  ])
+  ]
+
+  gulp.src(paths)
     .pipe(gulp.dest(`build/${size}`));
 
   done();
@@ -92,8 +97,7 @@ function copyImages({ size }, done) {
 
 // package files for hand off
 function packageFiles({ size }, done) {
-
-  let expel = ["guide", "ISI_Expander"];
+  let expel = ["guide", "ISI_Expander", "PauseButton"];
 
   fs.readdir(`build/${size}/`, (err, files) => {
     for (const file of files) {
@@ -106,15 +110,20 @@ function packageFiles({ size }, done) {
   });
 
   gulp.src(`build/${size}/combined.css`)
+    .pipe(vinylPaths(deleteSync))
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-    .pipe(gulp.dest(`build/${size}`));
+    .pipe(rename( {suffix: '.min'} ))
+    .pipe(gulp.dest(`build/${size}`))
 
   gulp.src(`build/${size}/combined.js`)
+    .pipe(vinylPaths(deleteSync))
     .pipe(uglify())
-    .pipe(gulp.dest(`build/${size}`));
+    .pipe(rename( {suffix: '.min'} ))
+    .pipe(gulp.dest(`build/${size}`))
 
   done();
 }
+
 
 
 // Gulp tasks /////////////////////////////////////////////////////////////////////////////////////
@@ -130,11 +139,13 @@ gulp.task('compile', (done) => {
   for (const banner of bannerConfig) {
     copyImages(banner, done)
     compileHBS(banner, done, false);
-    compileSCSS(banner, done);
-    compileJS(banner, done);
+    compileSCSS(banner, done, false);
+    compileJS(banner, done, false);
   }
 });
 
 gulp.task('watch', () => {gulp.watch(`src/`, gulp.series(['clean', 'compile']))});
 gulp.task('clean', async () => deleteSync([`build/*`]) );
 gulp.task('default', gulp.series( 'clean', 'compile', 'watch' ));
+
+
