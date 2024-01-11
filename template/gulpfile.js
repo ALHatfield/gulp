@@ -97,6 +97,7 @@ function copyImages({ size }, done) {
 
 // package files for hand off
 function packageFiles({ size }, done) {
+
   let expel = ["guide", "ISI_Expander", "PauseButton"];
 
   fs.readdir(`build/${size}/`, (err, files) => {
@@ -137,10 +138,10 @@ gulp.task('package', (done) => {
 // loop and compile banner.config.json
 gulp.task('compile', (done) => {
   for (const banner of bannerConfig) {
-    copyImages(banner, done)
     compileHBS(banner, done, false);
     compileSCSS(banner, done);
     compileJS(banner, done);
+    copyImages(banner, done);
   }
 });
 
