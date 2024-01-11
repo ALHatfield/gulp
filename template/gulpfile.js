@@ -46,7 +46,7 @@ function compileHBS(bannerData, done, production) {
 }
 
 // compile sass
-function compileSCSS({ size }, done, production) {
+function compileSCSS({ size }, done) {
   let paths = [
     `src/styles/global.scss`,
     `src/styles/${size}.scss`
@@ -62,7 +62,7 @@ function compileSCSS({ size }, done, production) {
 }
 
 // compile javascript
-function compileJS({ size, isi }, done, production) {
+function compileJS({ size, isi }, done) {
   let paths = [
     `src/scripts/global.js`,
     `src/scripts/${size}.js`
@@ -139,13 +139,11 @@ gulp.task('compile', (done) => {
   for (const banner of bannerConfig) {
     copyImages(banner, done)
     compileHBS(banner, done, false);
-    compileSCSS(banner, done, false);
-    compileJS(banner, done, false);
+    compileSCSS(banner, done);
+    compileJS(banner, done);
   }
 });
 
 gulp.task('watch', () => {gulp.watch(`src/`, gulp.series(['clean', 'compile']))});
 gulp.task('clean', async () => deleteSync([`build/*`]) );
 gulp.task('default', gulp.series( 'clean', 'compile', 'watch' ));
-
-
