@@ -14,17 +14,6 @@ let $clickTag3;
 let tl;
 let start_time;
 //
-let $frame1;
-let $frame1_in;
-let $frame1_out;
-let $frame2;
-let $frame2_in;
-let $frame2_out;
-let $frame3;
-let $frame3_in;
-let $frame3_out;
-//
-
 
 
 //
@@ -32,37 +21,9 @@ let animate = function () {
   "use strict";
   tl.add(() => { start_time = performance.now()/1000 }, "frame1");
 
-  tl.add("frame1", 0.0);
-  // in
-  tl.to($frame1, {delay: 0, duration: 0.5, opacity: 1}, "frame1");
-  tl.to($frame1_in, {delay: 0, duration: 0.5, opacity: 1}, "frame1");
+  //%%%% TimelineJS %%%%
 
-
-
-  tl.add("frame2", 2.5);
-  // out
-  tl.to($frame1, {delay: 0, duration: 0.5, opacity: 0}, "frame2");
-  tl.to($frame2_out, {delay: 0, duration: 0.5, opacity: 0}, "frame2");
-  tl.to($frame1_logo, {delay: 0, duration: 0.5, scale: 0.7, x: -86, y: -5 }, "frame2-=0.5");
-  // in
-  tl.to($frame2, {delay: 0, duration: 0.5, opacity: 1}, "frame2");
-  tl.to($frame2_in, {delay: 0, duration: 0.5, opacity: 1}, "frame2");
-
-
-
-  tl.add("frame3", 7.0);
-  // out
-  tl.to($frame2, {delay: 0, duration: 0.5, opacity: 0}, "frame3");
-  tl.to($frame3_out, {delay: 0, duration: 0.5, opacity: 0}, "frame3");
-  // in
-  tl.to($frame3, {delay: 0, duration: 0.5, opacity: 1}, "frame3");
-  tl.to($frame3_in, {delay: 0, duration: 0.5, opacity: 1}, "frame3");
-
-
-
-
-
-
+  // animation end
   tl.call(function () {
     startISIScroll()
     console.log(performance.now()/1000 - start_time)

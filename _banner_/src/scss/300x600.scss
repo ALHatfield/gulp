@@ -1,0 +1,112 @@
+$banner_height: 600px;
+$banner_width: 300px;
+$isi_height: 0px;
+$pi_height: 0px;
+/////////////////////////////////////////////////////
+#container {
+	height: $banner_height;
+	width: $banner_width;
+}
+#animate-section {
+	height: $banner_height - $isi_height - $pi_height;
+	width: $banner_width;
+}
+/////////////////////////////////////////////////////
+
+#frame1-bg { 
+	width: 150px;		// half size
+	height: 300px;		// half size
+	width: 300px;		// full size
+	height: 600px;		// full size
+	background-image: url(1-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: 0;
+	left: 0;
+}
+#frame1-copy1 { 
+	width: 203px;		// half size
+	height: 191.5px;		// half size
+	width: 406px;		// full size
+	height: 383px;		// full size
+	background-image: url(1-copy1.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: 0;
+	left: 0;
+}
+#frame1-copy2 { 
+	width: 274px;		// half size
+	height: 8px;		// half size
+	width: 548px;		// full size
+	height: 16px;		// full size
+	background-image: url(1-copy2.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: 0;
+	left: 0;
+}
+#frame2-copy { 
+	width: 269px;		// half size
+	height: 159px;		// half size
+	width: 538px;		// full size
+	height: 318px;		// full size
+	background-image: url(2-copy.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: 0;
+	left: 0;
+}
+#frame3-cta { 
+	width: 223.5px;		// half size
+	height: 174px;		// half size
+	width: 447px;		// full size
+	height: 348px;		// full size
+	background-image: url(3-cta.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: 0;
+	left: 0;
+}
+#frame3-signoff { 
+	width: 300px;		// half size
+	height: 132px;		// half size
+	width: 600px;		// full size
+	height: 264px;		// full size
+	background-image: url(3-signoff.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: 0;
+	left: 0;
+}
+
+
+
+
+
+
+/////////////////////////////////////////////////////
+#ISI {
+	border-top: 1px solid #9a9b9e;
+	bottom: $pi_height;
+	height: $isi_height;
+	width: $banner_width;
+}
+
+#ISIWrapper {
+	height: $isi_height;
+}
+
+#ISICopy {
+	padding-bottom: 20px;
+}
+
+#PI {
+	bottom: 0px;
+	left: 0;
+	width: $banner_width;
+	height: $pi_height;
+	font-size: 9px;
+	text-align: center;
+	padding: 2px 0;
+}

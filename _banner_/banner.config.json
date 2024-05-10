@@ -1,0 +1,30 @@
+[
+  {
+    "size": "160x600",
+    "width": 160,
+    "height": 600,
+    "isi": true,
+    "pi": true
+  },
+  {
+    "size": "300x250",
+    "width": 300,
+    "height": 250,
+    "isi": true,
+    "pi": true
+  },
+  {
+    "size": "300x600",
+    "width": 300,
+    "height": 600,
+    "isi": true,
+    "pi": true
+  },
+  {
+    "size": "728x90",
+    "width": 728,
+    "height": 90,
+    "isi": true,
+    "pi": true
+  }
+]

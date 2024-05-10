@@ -1,0 +1,105 @@
+$banner_height: 50px;
+$banner_width: 300px;
+$isi_height: 50px;
+$isi_width: 100px;
+$pi_height: 0px;
+/////////////////////////////////////////////////////
+#container {
+	height: $banner_height;
+	width: $banner_width;
+}
+#animate-section {
+	height: $banner_height;
+	width: $banner_width - $isi_width;
+}
+/////////////////////////////////////////////////////
+
+#frame1-bg { 
+	width: 300px;		// half size
+	height: 50px;		// half size
+	width: 600px;		// full size
+	height: 100px;		// full size
+	background-image: url(1-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: 0;
+	left: 0;
+}
+#frame2-copy { 
+	width: 119px;		// half size
+	height: 44.5px;		// half size
+	width: 238px;		// full size
+	height: 89px;		// full size
+	background-image: url(2-copy.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: 0;
+	left: 0;
+}
+#frame3-cta { 
+	width: 126px;		// half size
+	height: 40px;		// half size
+	width: 252px;		// full size
+	height: 80px;		// full size
+	background-image: url(3-cta.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: 0;
+	left: 0;
+}
+#frame3-signoff { 
+	width: 119px;		// half size
+	height: 152px;		// half size
+	width: 238px;		// full size
+	height: 304px;		// full size
+	background-image: url(3-signoff.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: 0;
+	left: 0;
+}
+#frameGroup 1438 { 
+	width: 161px;		// half size
+	height: 46px;		// half size
+	width: 322px;		// full size
+	height: 92px;		// full size
+	background-image: url(Group 1438.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: 0;
+	left: 0;
+}
+
+
+
+
+
+
+/////////////////////////////////////////////////////
+#ISI {
+	border-left: 1px solid #9a9b9e;
+	bottom: $pi_height;
+	height: $isi_height;
+	left: unset;
+	right: 0;
+	width: $isi_width;
+}
+
+#ISIWrapper {
+	height: $isi_height;
+}
+#ISICopy {
+	padding-bottom: 20px;
+}
+
+#PI {
+	border-left: 1px solid #9a9b9e;
+	bottom: 0px;
+	left: unset;
+	right: 0;
+	width: $isi_width;
+	height: $pi_height;
+	font-size: 9px;
+	text-align: center;
+	padding: 2px 0;
+}

@@ -5,143 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43073f69-db83-47b5-937f-8a6ee0aab534" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/08f60371c43a19b64d847d9ce1ba95ff0ebc3322" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/1144960d36ba75cc0d21c10dfbe25be677ffd1e0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/232d36370f819429b6c542abe503f7139c6e0449" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/7/275d783e298228506068436512433d343feb52aa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/28aeea79dfec39eecd4268388771f84aa815d58a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5a5a039db13267660912b21dbc7e72004e091c53" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b66b2b8ddd00fc5662db5aa77f13791074bd2ad" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/5/65b461b8a7cb21adabf010a64ae4af8325cf8f59" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/6709637a6666f6ce9d2feaa43d5c8e46e49fd082" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/7030d0b2f71b999ff89a343de08c414af32fc93a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/70ee7c9bd0ef1e1da3c22134a2527b58c4dce139" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/80bdec294e8ee612af2f9170d8561bd42fb0fe90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/852ec620f809e66bd30043685dc5917b73e57cc7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9aa9b0a1c5253f791d986673d950ef4cf90577c3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5c388246d075f7a37bea91680b0d04c475dc24d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/adc17a08ed262b7e465a79427b08264da13bcac8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c295b42c2593888a73bac3ee15e6841e51a5d769" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d03d870052205ff0962fb22ef85c6cc753cfacc7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d4697c1c33aa176513c1ae7ba8e0e1ff99c0e536" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d55a988717e1c36448e44c7ab80fe9c3e68891ed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec766ddca9466ca043271cf7fe1070e33acc8615" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee9d2cf188170ffae6c24450b921d4dd26b8dfaf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fa288d1472d29beccb489a676f68739ad365fc47" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/generate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/0439322c98a47ded00c6f05c81da6e5311f075c0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/052e6f11406d747e468adbafa3c1c41470c8ff1c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/05deec293b741445dea1c18db50d77caaffadf32" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/05deec293b741445dea1c18db50d77caaffadf32" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/08e80feb0180a0a285dad4dab858044f32c75379" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/2631ca6216d2ebdb0d2ec48f88aadb30e1af3f68" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/6/36b7fb8228e022451e26a836cd4b7cf23e628062" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/79d776445e5a1c54bed12873473ac2cf9255a755" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a25880f7ca407572c1c0439e0e33a6467284b4bd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a3a7629fd4da093b1f47ec7c7cd3d8e526ff89e1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/afa35203703cf70fdcbfe8c6ffabba4b601ffe7a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/dbeceae45598b24601e2daaf7b2bf3b06c40ccd4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/dbeceae45598b24601e2daaf7b2bf3b06c40ccd4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/8/08f60371c43a19b64d847d9ce1ba95ff0ebc3322" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/1/1144960d36ba75cc0d21c10dfbe25be677ffd1e0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/3/232d36370f819429b6c542abe503f7139c6e0449" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/7/275d783e298228506068436512433d343feb52aa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/8/28aeea79dfec39eecd4268388771f84aa815d58a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/a/5a5a039db13267660912b21dbc7e72004e091c53" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/b/5b66b2b8ddd00fc5662db5aa77f13791074bd2ad" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/5/65b461b8a7cb21adabf010a64ae4af8325cf8f59" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/7/6709637a6666f6ce9d2feaa43d5c8e46e49fd082" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/0/7030d0b2f71b999ff89a343de08c414af32fc93a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/0/70ee7c9bd0ef1e1da3c22134a2527b58c4dce139" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/0/80bdec294e8ee612af2f9170d8561bd42fb0fe90" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/5/852ec620f809e66bd30043685dc5917b73e57cc7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/a/9aa9b0a1c5253f791d986673d950ef4cf90577c3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/5/a5c388246d075f7a37bea91680b0d04c475dc24d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/d/adc17a08ed262b7e465a79427b08264da13bcac8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/2/c295b42c2593888a73bac3ee15e6841e51a5d769" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/0/d03d870052205ff0962fb22ef85c6cc753cfacc7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/4/d4697c1c33aa176513c1ae7ba8e0e1ff99c0e536" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/5/d55a988717e1c36448e44c7ab80fe9c3e68891ed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/c/ec766ddca9466ca043271cf7fe1070e33acc8615" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/e/ee9d2cf188170ffae6c24450b921d4dd26b8dfaf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/a/fa288d1472d29beccb489a676f68739ad365fc47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/4/0439322c98a47ded00c6f05c81da6e5311f075c0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/5/052e6f11406d747e468adbafa3c1c41470c8ff1c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/8/08e80feb0180a0a285dad4dab858044f32c75379" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/6/2631ca6216d2ebdb0d2ec48f88aadb30e1af3f68" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/6/36b7fb8228e022451e26a836cd4b7cf23e628062" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/9/79d776445e5a1c54bed12873473ac2cf9255a755" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/2/a25880f7ca407572c1c0439e0e33a6467284b4bd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/3/a3a7629fd4da093b1f47ec7c7cd3d8e526ff89e1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/f/afa35203703cf70fdcbfe8c6ffabba4b601ffe7a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/banner.config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/images/300x250/1-img1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/images/300x250/1-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/images/300x250/3-line.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/images/300x250/guide1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/images/300x250/guide2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/images/300x250/guide3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/scripts/160x600.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/scripts/300x250.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/scripts/300x600.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/scripts/728x90.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/scripts/ISIScroller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/scripts/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/styles/160x600.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/styles/300x250.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/styles/300x600.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/styles/728x90.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/styles/global.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/templates/default.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/templates/partials/ISI.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/templates/partials/head.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/templates/partials/scripts.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_A/src/utils/ISI_Expander.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/banner.config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/build/160x600/combined.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/build/160x600/combined.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/build/160x600/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/build/300x250/combined.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/build/300x250/combined.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/build/300x250/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/src/scripts/160x600.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/src/scripts/300x250.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/src/scripts/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/src/styles/160x600.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/src/styles/300x250.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/src/styles/global.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/src/templates/layouts/default.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/src/templates/partials/ISI.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/src/templates/partials/head.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_B/src/templates/partials/scripts.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/banner.config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/build/banner1/160x600/combined.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/build/banner1/160x600/combined.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/build/banner1/160x600/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/build/banner1/300x250/combined.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/build/banner1/300x250/combined.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/build/banner1/300x250/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/build/banner2/160x600/combined.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/build/banner2/160x600/combined.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/build/banner2/160x600/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/build/banner2/300x250/combined.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/build/banner2/300x250/combined.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/build/banner2/300x250/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner1/scripts/160x600.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner1/scripts/300x250.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner1/scripts/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner1/styles/160x600.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner1/styles/300x250.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner1/styles/global.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner1/templates/layouts/default.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner1/templates/partials/ISI.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner1/templates/partials/head.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner1/templates/partials/scripts.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner2/scripts/160x600.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner2/scripts/300x250.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner2/scripts/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner2/styles/160x600.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner2/styles/300x250.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner2/styles/global.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner2/templates/layouts/default.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner2/templates/partials/ISI.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner2/templates/partials/head.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp_C/src/banner2/templates/partials/scripts.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/images/300x250/1-img1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/images/300x250/1-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/images/300x250/3-line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/images/300x250/guide1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/images/300x250/guide2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/images/300x250/guide3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/scripts/160x600.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/scripts/300x250.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/scripts/300x600.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/scripts/728x90.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/scripts/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/scripts/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/styles/160x600.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/styles/300x250.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/styles/300x600.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/styles/728x90.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/scss/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/templates/default.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/templates/default.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/templates/partials/scripts.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/templates/partials/scripts.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,6 +73,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2YohZg70xMs9qr6saCiF3YoePEB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -172,18 +87,24 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;/Applications/MAMP/htdocs/gulp/node_modules/gulp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Applications/MAMP/htdocs/gulp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;io.snyk.plugin.settings.SnykProjectSettingsConfigurable&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Applications/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_banner_/src/images" />
+      <recent name="$PROJECT_DIR$/_banner_/src/images/160x600" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -216,11 +137,54 @@
       <workItem from="1704312685989" duration="27000" />
       <workItem from="1704326432930" duration="584000" />
       <workItem from="1704491666155" duration="409000" />
-      <workItem from="1704826038987" duration="1797000" />
+      <workItem from="1704826038987" duration="13412000" />
+      <workItem from="1704910456367" duration="11298000" />
+      <workItem from="1704987482431" duration="3964000" />
+      <workItem from="1705014933793" duration="341000" />
+      <workItem from="1705015342859" duration="697000" />
+      <workItem from="1705093138699" duration="3029000" />
+      <workItem from="1705444726945" duration="1557000" />
+      <workItem from="1705599762706" duration="1877000" />
+      <workItem from="1705688015528" duration="2260000" />
+      <workItem from="1706113975830" duration="598000" />
+      <workItem from="1706121394989" duration="425000" />
+      <workItem from="1706126494756" duration="1050000" />
+      <workItem from="1706309992482" duration="6734000" />
+      <workItem from="1706820657415" duration="247000" />
+      <workItem from="1708102826769" duration="13020000" />
+      <workItem from="1708445121541" duration="590000" />
+      <workItem from="1708450021240" duration="16857000" />
+      <workItem from="1708904996018" duration="4077000" />
+      <workItem from="1709144540513" duration="598000" />
+      <workItem from="1709151490388" duration="1197000" />
+      <workItem from="1709251060938" duration="884000" />
+      <workItem from="1709654976300" duration="1210000" />
+      <workItem from="1710462179521" duration="18000" />
+      <workItem from="1710568309490" duration="625000" />
+      <workItem from="1712764228091" duration="3358000" />
+      <workItem from="1712857591024" duration="3255000" />
+      <workItem from="1713287400886" duration="4257000" />
+      <workItem from="1713300381930" duration="18919000" />
+      <workItem from="1715009476033" duration="9991000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

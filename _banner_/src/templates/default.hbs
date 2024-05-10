@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> head }}
+</head>
+<body>
+<script type="text/javascript">
+    var clickTag1 = "";   // Main exit
+    var clickTag2 = "";   // PI exit
+    var clickTag3 = "";
+    var clickTag4 = "";
+</script>
+<div id="container">
+    <div id="animate-section" class="clickTag1">
+
+        <!--IMAGES-->
+        <div id="frame1-bg" class="pos-abs hide"></div>
+		<div id="frame1-copy1" class="pos-abs hide"></div>
+		<div id="frame2-copy" class="pos-abs hide"></div>
+		<div id="frame3-cta" class="pos-abs hide"></div>
+		<div id="frame3-signoff" class="pos-abs hide"></div>
+		
+
+        <!--COPY-->
+        
+
+    </div>
+
+    {{> ISI}}
+    <div id="PI" class="pos-abs text-bold clickTag2">
+        Important Safety Information and Indication
+    </div>
+
+<!--      <img src="guide1.png" style="position:absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 0.5;">-->
+<!--      <img src="guide2.png" style="position:absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 0.5;">-->
+<!--      <img src="guide3.png" style="position:absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 0.5;">-->
+<!--      <img src="guide4.png" style="position:absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 0.5;">-->
+</div>
+
+{{> scripts }}
+</body>
+</html>
