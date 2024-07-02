@@ -1,8 +1,6 @@
 
 D
 template/gulpfile.js,0/8/08898b0bd4c2a128520a97c0a65665c28ef209b9
-K
-template/banner.config.json,6/e/6e6c615114c580246019fcb80f3c76ce0751f67d
 R
 "template/src/utils/ISI_Expander.js,0/5/05deec293b741445dea1c18db50d77caaffadf32
 Q
@@ -60,7 +58,17 @@ M
 _banner_/src/scss/global.scss,6/7/673fb38150543a5e89621f8a4bfc976f6274c158
 8
 TODO.txt,b/8/b871594f146532f9abccbebffa1170a083349518
-M
-_banner_/src/scss/300x50.scss,6/0/604b5ffa6248def4485335491ea01edf0c6aa430
+C
+_banner_/.gitignore,a/f/af7cb16d678d48a32d12f7d700c09e6988beb85c
+C
+_banner_/index.html,8/f/8f4b2fb1332b1ed40ae129e7197dadb43ffe828d
+D
+_banner_/gulpfile.js,2/5/2532d6b52a47768d90f3304a6259ed909bd6863d
+K
+_banner_/banner.config.json,d/0/d09a4925130cc9fc62e5b973d835c9f2e8efefdd
 M
 _banner_/src/scss/320x50.scss,a/3/a3c580da10a94f87b13f6d7db00802c8352adaeb
+M
+_banner_/src/scss/300x50.scss,6/0/604b5ffa6248def4485335491ea01edf0c6aa430
+<
+package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a

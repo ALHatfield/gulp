@@ -1,7 +1,6 @@
 %%%% scssVariables %%%%
 
-$primary-color: #140FA5;
-$secondary-color: #4D4D4F;
+
 .primary-color {color: $primary-color;}
 .secondary-color {color: $secondary-color;}
 
@@ -34,6 +33,10 @@ sup {
   line-height: 0;
 }
 
+
+.clickTag1, .clickTag2, .clickTag3, .clickTag4 {
+  cursor: pointer;
+}
 ////////////////////////////////////////////////////////////
 #container {
   font-family: $font-family;
@@ -54,6 +57,8 @@ sup {
   left: -1px;
 }
 ////////////////////////////////////////////////////////////
+
+
 
 ////////////////////////////////////////////////////////////
 #ISI {

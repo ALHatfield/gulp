@@ -61,7 +61,7 @@ function writeCode(fileData) {
 
     // write css files and create bulk list of elements
     for (const size in fileData) {
-        // bulk: concat the list of images for every size without duplicates to write HTML and JS
+        // bulk: concat a list of image files for every size without duplicates to write HTML and JS
         bulk = [...new Set(fileData[size])];
 
         // collect css organized by size
@@ -88,15 +88,15 @@ function writeCode(fileData) {
     // use bulk to build html and js code
     bulk.forEach( ({ file, folder, fileName, idName, variableName, width, height, ext }) => {
         imageHTML += `<div id="frame${idName}" class="pos-abs hide"></div>\n\t\t`
-        imageVariables += `let $frame${variableName};\n`
-        imageSelectors += `$frame${variableName} = doc.getElementById("frame${idName}");\n\t`
+        // imageVariables += `let $frame${variableName};\n`
+        // imageSelectors += `$frame${variableName} = doc.getElementById("frame${idName}");\n\t`
     });
 
     // write html file
     writeHTML(imageHTML)
 
     // write js file
-    // writeJS(imageVariables, imageSelectors)
+    // writeJS(imageVariables, imageSelectors)      // no longer needed
 
 }
 
@@ -114,7 +114,6 @@ function writeHTML(html) {
 async function writeCSS(size, css){
     await fs.readFile(`${destDir}/src/scss/${size}.scss`, 'utf8', (err, data) => {
         if (err) throw err;
-
         data = data.replace(/\/\/%%%% ImageCSS %%%%/g, css)
         fs.writeFileSync(`${destDir}/src/scss/${size}.scss`, data, (err) => {
             if (err) throw err;

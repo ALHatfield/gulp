@@ -55,6 +55,7 @@ function compileSCSS({ size }, done) {
 
   gulp.src(paths)
     .pipe(concat('combined.css'))
+    .pipe(sass().on('error', sass.logError))
     .pipe(sass({ outputStyled: 'nested' }))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(gulp.dest(`build/${size}`));
@@ -118,16 +119,14 @@ function packageFiles({ size }, done) {
     .pipe(gulp.dest(`build/${size}`))
 
   gulp.src(`build/${size}/combined.js`)
-    // .pipe(vinylPaths(deleteSync))  // not working
-    .pipe(gulp_remove_logging())
+    .pipe(vinylPaths(deleteSync))
+    // .pipe(gulp_remove_logging())    // remove console log -not working
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(`build/${size}`))
 
   done();
 }
-
-
 
 // Gulp tasks ////////////////////////////////////////////////////////////////////////////////////
 gulp.task('package', (done) => {

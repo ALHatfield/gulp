@@ -1,48 +1,35 @@
 
-
-2)
-   fix frame4-in not generating
-
-
-3)
-    gulp terminates when there is a scss compile issue
-      - keep it running even with compile issues
-
-
-
-4)
-    .gitignore - isn't getting generated
-
-
 5)
     gulp package
       - zip up build files?
       - log kb size
+      https://www.npmjs.com/package/archiver
 
 6)
     footnotes
-      - use tables to force bullets in correct position
+      - use tables to force bullets in correct position?
 
 
 7)
-    `_banner_` needs to be deleted everytime to run generator
-
-8)
-    remove node_modules from being generated
-
-9)
-    stage index.html - show all sizes
-
-10)
-    $primary + $secondary color not generating in scss
+    `_banner_` needs to be deleted everytime to run generate.js
 
 
-11)
-    reset pause button to "play" when new banner is clicked on
 
-12)
-    ISI and PI true/false
-      - when isi and pi are false - remove them from html
-      - also $frame variables aren't being declared
-      - banner config not being written correctly
 
+
+13)   gulpfile.js Package file function:
+
+      .pipe(gulp_remove_logging())   - not working
+
+
+14)
+    not getting build:
+    $frame4 = doc.querySelectorAll(".frame4");
+    $frame4_in = doc.querySelectorAll(".frame4-in");
+    $frame4_out = doc.querySelectorAll(".frame4-out");
+
+15)
+    if no ISI then set override.scss isi width to 0
+
+16)
+    create guide buttons for developer mode

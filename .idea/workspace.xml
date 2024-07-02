@@ -5,54 +5,100 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43073f69-db83-47b5-937f-8a6ee0aab534" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/generate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/0439322c98a47ded00c6f05c81da6e5311f075c0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/052e6f11406d747e468adbafa3c1c41470c8ff1c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/05deec293b741445dea1c18db50d77caaffadf32" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/05deec293b741445dea1c18db50d77caaffadf32" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/08e80feb0180a0a285dad4dab858044f32c75379" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/2631ca6216d2ebdb0d2ec48f88aadb30e1af3f68" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/6/36b7fb8228e022451e26a836cd4b7cf23e628062" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/79d776445e5a1c54bed12873473ac2cf9255a755" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a25880f7ca407572c1c0439e0e33a6467284b4bd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a3a7629fd4da093b1f47ec7c7cd3d8e526ff89e1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/afa35203703cf70fdcbfe8c6ffabba4b601ffe7a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/dbeceae45598b24601e2daaf7b2bf3b06c40ccd4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/dbeceae45598b24601e2daaf7b2bf3b06c40ccd4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e6c615114c580246019fcb80f3c76ce0751f67d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec33e50adc6b57b4eff22421461af8aacd0b5c9a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec33e50adc6b57b4eff22421461af8aacd0b5c9a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/4/0439322c98a47ded00c6f05c81da6e5311f075c0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/5/052e6f11406d747e468adbafa3c1c41470c8ff1c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/8/08e80feb0180a0a285dad4dab858044f32c75379" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/6/2631ca6216d2ebdb0d2ec48f88aadb30e1af3f68" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/6/36b7fb8228e022451e26a836cd4b7cf23e628062" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/9/79d776445e5a1c54bed12873473ac2cf9255a755" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/2/a25880f7ca407572c1c0439e0e33a6467284b4bd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/3/a3a7629fd4da093b1f47ec7c7cd3d8e526ff89e1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/f/afa35203703cf70fdcbfe8c6ffabba4b601ffe7a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/e/6e6c615114c580246019fcb80f3c76ce0751f67d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/banner.config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/160x600/1-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/160x600/1-copy1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/160x600/1-copy2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/160x600/2-copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/160x600/3-cta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/160x600/guide1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/160x600/guide2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/160x600/guide3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x250/1-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x250/1-copy1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x250/1-copy2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x250/2-copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x250/3-cta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x250/3-signoff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x250/guide1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x250/guide2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x250/guide3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x50/1-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x50/2-copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x50/3-cta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x50/3-signoff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x50/Group 1438.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x50/guide1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x50/guide2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x50/guide3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x600/1-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x600/1-copy1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x600/1-copy2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x600/2-copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x600/3-cta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x600/3-signoff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x600/guide1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x600/guide2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/300x600/guide3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/320x50/1-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/320x50/1-copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/320x50/2-copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/320x50/3-cta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/320x50/3-signoff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/320x50/guide1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/320x50/guide2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/320x50/guide3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/728x90/1-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/728x90/1-copy1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/728x90/2-copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/728x90/3-cta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/728x90/3-signoff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/728x90/guide1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/728x90/guide2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/images/728x90/guide3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/scripts/160x600.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/scripts/300x250.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/scripts/300x50.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/scripts/300x600.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/scripts/320x50.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/scripts/728x90.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/scripts/ISIScroller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/scripts/global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/scss/160x600.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/scss/300x250.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/scss/300x50.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/scss/300x600.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/scss/320x50.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/scss/728x90.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/scss/global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/templates/default.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/templates/partials/ISI.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/templates/partials/head.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/templates/partials/scripts.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/utils/ISI_Expander.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_banner_/src/utils/PauseButton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/generate.js" beforeDir="false" afterPath="$PROJECT_DIR$/generate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.json" beforeDir="false" afterPath="$PROJECT_DIR$/input.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/banner.config.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/template/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/gulpfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/images/300x250/1-img1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/images/300x250/1-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/images/300x250/3-line.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/images/300x250/guide1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/images/300x250/guide2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/images/300x250/guide3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/scripts/160x600.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/scripts/300x250.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/scripts/300x600.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/scripts/728x90.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/template/src/scripts/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/scripts/global.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/styles/160x600.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/styles/300x250.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/styles/300x600.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/styles/728x90.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/scss/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/scss/global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/src/templates/default.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/templates/default.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/src/templates/partials/ISI.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/templates/partials/ISI.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/src/templates/partials/scripts.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/templates/partials/scripts.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,29 +126,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;/Applications/MAMP/htdocs/gulp/node_modules/gulp&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Applications/MAMP/htdocs/gulp&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;io.snyk.plugin.settings.SnykProjectSettingsConfigurable&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "js.buildTools.gulp.gulp_package_dir": "/Applications/MAMP/htdocs/gulp/node_modules/gulp",
+    "last_opened_file_path": "/Applications/MAMP/htdocs/gulp/_banner_/src/images/320x50",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "io.snyk.plugin.settings.SnykProjectSettingsConfigurable",
+    "ts.external.directory.path": "/Applications/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_banner_/src/images/320x50" />
+      <recent name="$PROJECT_DIR$/_banner_/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_banner_/src/images/300x250" />
       <recent name="$PROJECT_DIR$/_banner_/src/images" />
       <recent name="$PROJECT_DIR$/_banner_/src/images/160x600" />
       <recent name="$PROJECT_DIR$" />
@@ -165,7 +214,13 @@
       <workItem from="1712857591024" duration="3255000" />
       <workItem from="1713287400886" duration="4257000" />
       <workItem from="1713300381930" duration="18919000" />
-      <workItem from="1715009476033" duration="9991000" />
+      <workItem from="1715009476033" duration="15003000" />
+      <workItem from="1715700690107" duration="23757000" />
+      <workItem from="1717174096776" duration="593000" />
+      <workItem from="1717441697972" duration="193000" />
+      <workItem from="1717514119171" duration="17677000" />
+      <workItem from="1718284625992" duration="616000" />
+      <workItem from="1718290611840" duration="9611000" />
     </task>
     <servers />
   </component>

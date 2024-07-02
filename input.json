@@ -1,10 +1,10 @@
 {
   "isi": false,
   "pi" : false,
-  "primaryColor": "#C8102E",
+  "primaryColor": "#817387",
   "secondaryColor": "#000",
-  "fontFamily": "Merriweather Sans, sans-serif",
-  "fontFamilyCDN": "https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap",
+  "fontFamily": "\"Lato\", sans-serif",
+  "fontFamilyCDN": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap",
   "sizes": [
     "160x600",
     "300x250",
@@ -21,7 +21,15 @@
 
     },
     {
-
+      "3-copy1": "Heard much about"
+    },
+    {
+      "4-copy1": "Neither have",
+      "4-copy3": "But it can be"
+    },
+    {
+      "5-copy2": "See if you have any of the",
+      "5-footnote": "Brought to you by Edwards Lifesciences &copy; 2024 PP--US-9759 v1.0"
     }
   ]
 }

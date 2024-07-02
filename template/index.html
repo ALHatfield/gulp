@@ -7,11 +7,12 @@
 <body>
 <h1>banners</h1>
 
-<nav style="float:left;padding-right:20px;">
+<nav id="nav" style="float:left;padding-right:20px;">
     <h2>Select a banner</h2>
-    <!--    <a href="build/160x600/index.html" target="flash_iframe" data-width="300" data-height="250" data-title="160x600">160x600</a><br>-->
-    <a href="build/300x250/index.html" target="flash_iframe" data-width="300" data-height="250" data-title="300x250">300x250</a><br>
-    <!--    <a href="build/728x90/index.html" target="flash_iframe" data-width="728" data-height="90" data-title="728x90">728x90</a><br>-->
+
+    %%%% STAGE_HTML %%%%
+
+
 </nav>
 <div id="contatiner" style="padding:10px;">
     <div style="margin-left: 25px;height: 22px;">
@@ -19,7 +20,7 @@
         <button id="expand-btn">expand ISI</button>
     </div>
     <div id="banner_name"><strong></strong></div><span id="banner_status"><strong></strong></span>
-    <iframe id="flash_iframe" name="flash_iframe" src="" style="background:#CCC;border:none;width:2000px;height:10000px;margin: 25px"></iframe>
+    <iframe id="flash_iframe" name="flash_iframe" src="" style="background:#CCC;border:none;width:800px;height:10000px;margin: 25px"></iframe>
 </div>
 
 <div style="clear:both;"></div>
@@ -42,6 +43,16 @@
       $play_btn.innerHTML = "&#9208;";
     }
   })
+
+  // reset pause button when new size is clicked on
+  let $anchors = document.getElementById("nav").querySelectorAll("a");
+  $anchors.forEach($anchor => (
+    $anchor.addEventListener("click", e => {
+      pause = false;
+      $iframe.setAttribute("pause", false);
+      $play_btn.innerHTML = "&#9208;";
+    })
+  ))
 
   // expand isi functionality
   let $expand_btn = document.getElementById("expand-btn");

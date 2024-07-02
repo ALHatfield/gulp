@@ -14,7 +14,7 @@ let $clickTag3;
 let tl;
 let start_time;
 //
-
+//%%%% VariablesJS %%%%
 
 //
 let animate = function () {

@@ -21,10 +21,14 @@
 
     </div>
 
-    {{> ISI}}
-    <div id="PI" class="pos-abs text-bold clickTag2">
-        Important Safety Information and Indication
-    </div>
+    {{#if ISI}}
+        {{> ISI}}
+    {{/if}}
+    {{#if PI}}
+        <div id="PI" class="pos-abs text-bold clickTag2">
+            Important Safety Information and Indication
+        </div>
+    {{/if}}
 
 <!--      <img src="guide1.png" style="position:absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 0.5;">-->
 <!--      <img src="guide2.png" style="position:absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: 0.5;">-->
